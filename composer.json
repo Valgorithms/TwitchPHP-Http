@@ -1,0 +1,36 @@
+{
+    "name": "twitchphp/http",
+    "description": "Handles HTTP requests to Twitch servers",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Valithor Obsidion",
+            "email": "valithor@valgorithms.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Twitch\\Http\\": "src/Twitch",
+            "Tests\\Twitch\\Http\\": "tests/Twitch"
+        }
+    },
+    "require": {
+        "php": "^7.4|^8.0",
+        "psr/log": "^1.1 || ^2.0 || ^3.0",
+        "react/http": "^1.2",
+        "react/promise": "^2.2"
+    },
+    "suggest": {
+        "guzzlehttp/guzzle": "For alternative to ReactPHP/Http Browser"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^2.17",
+        "guzzlehttp/guzzle": "^6.0|^7.0",
+        "mockery/mockery": "^1.5",
+        "monolog/monolog": "^2.2",
+        "psy/psysh": "^0.10.6",
+        "phpunit/phpunit": "^9.5",
+        "react/async": "^4 || ^3"
+    }
+}
