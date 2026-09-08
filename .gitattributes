@@ -7,3 +7,4 @@
 /.php-cs-fixer.dist.php export-ignore
 /phpunit.xml         export-ignore
 /CHANGELOG.md        export-ignore
+/phpdoc.dist.xml     export-ignore
