@@ -39,7 +39,7 @@ use Twitch\Http\Exceptions\RateLimitException;
  *
  * @author Valithor Obsidion <valithor@valgorithms.com>
  */
-final class Http
+final class Http implements HttpInterface
 {
     public const VERSION = '1.0.0';
 
