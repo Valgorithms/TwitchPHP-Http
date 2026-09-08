@@ -1,0 +1,4416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+            <title>TwitchPHP-Http Documentation</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="../">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png"/>
+    <link rel="icon" href="images/favicon.ico"/>
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png"/>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/template.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism-okaidia.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.css">
+                <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
+        <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+        <script src="js/template.js"></script>
+        <script src="js/search.js"></script>
+        <script defer src="js/searchIndex.js"></script>
+    </head>
+<body id="top">
+    <header class="phpdocumentor-header phpdocumentor-section">
+    <h1 class="phpdocumentor-title"><a href="" class="phpdocumentor-title__link">TwitchPHP-Http Documentation</a></h1>
+    <input class="phpdocumentor-header__menu-button" type="checkbox" id="menu-button" name="menu-button" />
+    <label class="phpdocumentor-header__menu-icon" for="menu-button">
+        <i class="fas fa-bars"></i>
+    </label>
+    <section data-search-form class="phpdocumentor-search">
+    <label>
+        <span class="visually-hidden">Search for</span>
+        <svg class="phpdocumentor-search__icon" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="7.5" cy="7.5" r="6.5" stroke="currentColor" stroke-width="2"/>
+            <line x1="12.4892" y1="12.2727" x2="19.1559" y2="18.9393" stroke="currentColor" stroke-width="3"/>
+        </svg>
+        <input type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading .." disabled />
+    </label>
+</section>
+
+    <nav class="phpdocumentor-topnav">
+    <ul class="phpdocumentor-topnav__menu">
+        </ul>
+</nav>
+</header>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <input class="phpdocumentor-sidebar__menu-button" type="checkbox" id="sidebar-button" name="sidebar-button" />
+<label class="phpdocumentor-sidebar__menu-icon" for="sidebar-button">
+    Menu
+</label>
+<aside class="phpdocumentor-column -three phpdocumentor-sidebar">
+                    <section class="phpdocumentor-sidebar__category -namespaces">
+            <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="namespaces/twitch.html" class="">Twitch</a>
+</h4>
+    <ul class="phpdocumentor-list">
+                    <li>
+                <a href="namespaces/twitch-http.html" class="">Http</a>
+                
+            </li>
+            </ul>
+
+                        </section>
+                <section class="phpdocumentor-sidebar__category -packages">
+            <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="packages/Application.html" class="">Application</a>
+</h4>
+
+                        </section>
+            
+    <section class="phpdocumentor-sidebar__category -reports">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category -indices">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="indices/files.html">Files</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -nine phpdocumentor-content">
+                                <section>
+                                        <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/twitch.html">Twitch</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/twitch-http.html">Http</a></li>
+    </ul>
+
+    <article class="phpdocumentor-element -class">
+        <h2 class="phpdocumentor-content__title">
+    Endpoint
+
+    
+            <div class="phpdocumentor-element__package">
+            in package
+            <ul class="phpdocumentor-breadcrumbs">
+                                    <li class="phpdocumentor-breadcrumb"><a href="packages/Application.html">Application</a></li>
+                            </ul>
+        </div>
+    
+    
+    </h2>
+
+<div class="phpdocumentor-label-line">
+
+
+</div>
+
+        <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">26</span>
+
+    </aside>
+
+            <p class="phpdocumentor-summary">The set of Twitch Helix endpoints, relative to {@see Http::BASE_URL}.</p>
+
+
+    <section class="phpdocumentor-description"><p>Twitch Helix is almost entirely query-parameter driven — path parameters are
+rare (only a couple of the extension endpoints use them). Bind those with
+<abbr title="\Twitch\Http\bind()">bind()</abbr> / <abbr title="\Twitch\Http\bindAssoc()">bindAssoc()</abbr>; everything else goes through
+<abbr title="\Twitch\Http\addQuery()">addQuery()</abbr> / <abbr title="\Twitch\Http\withQuery()">withQuery()</abbr>.</p>
+</section>
+
+
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="classes/Twitch-Http-Endpoint.html#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">link</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                        <a class="phpdocumentor-tag-link" href="https://dev.twitch.tv/docs/api/reference/"> https://dev.twitch.tv/docs/api/reference/ </a>
+                                    </dd>
+                                <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">author</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                            <section class="phpdocumentor-description"><p>Valithor Obsidion <a href="mailto:valithor@valgorithms.com">valithor@valgorithms.com</a></p>
+</section>
+
+                                    </dd>
+                        </dl>
+
+    
+    
+<h3 id="toc">
+    Table of Contents
+    <a href="classes/Twitch-Http-Endpoint.html#toc" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h3>
+
+
+
+
+
+
+
+<h4 id="toc-constants">
+    Constants
+    <a href="classes/Twitch-Http-Endpoint.html#toc-constants" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#constant_AD_SCHEDULE">AD_SCHEDULE</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;channels/ads&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#constant_AD_SNOOZE">AD_SNOOZE</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;channels/ads/schedule/snooze&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#constant_ALL_STREAM_TAGS">ALL_STREAM_TAGS</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;tags/streams&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#constant_AUTOMOD_HELD_MESSAGE">AUTOMOD_HELD_MESSAGE</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;moderation/automod/message&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#constant_AUTOMOD_SETTINGS">AUTOMOD_SETTINGS</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;moderation/automod/settings&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#constant_AUTOMOD_STATUS">AUTOMOD_STATUS</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;moderation/enforcements/status&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#constant_BANNED_USERS">BANNED_USERS</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;moderation/banned&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#constant_BANS">BANS</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;moderation/bans&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#constant_BITS_LEADERBOARD">BITS_LEADERBOARD</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;bits/leaderboard&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#constant_BLOCKED_TERMS">BLOCKED_TERMS</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;moderation/blocked_terms&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#constant_CCLS">CCLS</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;content_classification_labels&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#constant_CHANNEL_CHAT_BADGES">CHANNEL_CHAT_BADGES</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;chat/badges&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#constant_CHANNEL_EDITORS">CHANNEL_EDITORS</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;channels/editors&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#constant_CHANNEL_EMOTES">CHANNEL_EMOTES</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;chat/emotes&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#constant_CHANNEL_FOLLOWERS">CHANNEL_FOLLOWERS</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;channels/followers&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#constant_CHANNEL_TEAMS">CHANNEL_TEAMS</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;teams/channel&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#constant_CHANNEL_VIPS">CHANNEL_VIPS</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;channels/vips&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#constant_CHANNELS">CHANNELS</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;channels&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#constant_CHANNELS_FOLLOWED">CHANNELS_FOLLOWED</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;channels/followed&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#constant_CHARITY_CAMPAIGN">CHARITY_CAMPAIGN</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;charity/campaigns&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#constant_CHARITY_DONATIONS">CHARITY_DONATIONS</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;charity/donations&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#constant_CHAT_ANNOUNCEMENTS">CHAT_ANNOUNCEMENTS</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;chat/announcements&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#constant_CHAT_SETTINGS">CHAT_SETTINGS</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;chat/settings&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#constant_CHATTERS">CHATTERS</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;chat/chatters&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#constant_CHEERMOTES">CHEERMOTES</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;bits/cheermotes&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#constant_CLIPS">CLIPS</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;clips&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#constant_COMMERCIAL">COMMERCIAL</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;channels/commercial&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#constant_CONDUIT_SHARDS">CONDUIT_SHARDS</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;eventsub/conduits/shards&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#constant_CONDUITS">CONDUITS</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;eventsub/conduits&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#constant_CUSTOM_REWARD_REDEMPTIONS">CUSTOM_REWARD_REDEMPTIONS</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;channel_points/custom_rewards/redemptions&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#constant_CUSTOM_REWARDS">CUSTOM_REWARDS</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;channel_points/custom_rewards&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#constant_DROPS_ENTITLEMENTS">DROPS_ENTITLEMENTS</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;entitlements/drops&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#constant_EMOTE_SETS">EMOTE_SETS</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;chat/emotes/set&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#constant_EVENTSUB_SUBSCRIPTIONS">EVENTSUB_SUBSCRIPTIONS</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;eventsub/subscriptions&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#constant_EXTENSION_ANALYTICS">EXTENSION_ANALYTICS</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;analytics/extensions&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#constant_EXTENSION_BITS_PRODUCTS">EXTENSION_BITS_PRODUCTS</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;bits/extensions&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#constant_EXTENSION_CHAT_MESSAGE">EXTENSION_CHAT_MESSAGE</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;extensions/chat&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#constant_EXTENSION_CONFIGURATION">EXTENSION_CONFIGURATION</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;extensions/configurations&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#constant_EXTENSION_LIVE_CHANNELS">EXTENSION_LIVE_CHANNELS</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;extensions/live&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#constant_EXTENSION_PUBSUB_MESSAGE">EXTENSION_PUBSUB_MESSAGE</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;extensions/pubsub&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#constant_EXTENSION_REQUIRED_CONFIG">EXTENSION_REQUIRED_CONFIG</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;extensions/required_configuration&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#constant_EXTENSION_SECRETS">EXTENSION_SECRETS</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;extensions/jwt/secrets&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#constant_EXTENSION_TRANSACTIONS">EXTENSION_TRANSACTIONS</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;extensions/transactions&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#constant_EXTENSIONS">EXTENSIONS</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;extensions&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#constant_GAME_ANALYTICS">GAME_ANALYTICS</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;analytics/games&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#constant_GAMES">GAMES</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;games&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#constant_GLOBAL_CHAT_BADGES">GLOBAL_CHAT_BADGES</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;chat/badges/global&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#constant_GLOBAL_EMOTES">GLOBAL_EMOTES</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;chat/emotes/global&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#constant_GOALS">GOALS</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;goals&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#constant_GUEST_STAR_CHANNEL_SETTINGS">GUEST_STAR_CHANNEL_SETTINGS</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;guest_star/channel_settings&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#constant_GUEST_STAR_INVITES">GUEST_STAR_INVITES</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;guest_star/invites&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#constant_GUEST_STAR_SESSION">GUEST_STAR_SESSION</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;guest_star/session&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#constant_GUEST_STAR_SLOT">GUEST_STAR_SLOT</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;guest_star/slot&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#constant_GUEST_STAR_SLOT_SETTINGS">GUEST_STAR_SLOT_SETTINGS</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;guest_star/slot_settings&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#constant_HYPE_TRAIN_EVENTS">HYPE_TRAIN_EVENTS</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;hypetrain/events&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#constant_MODERATED_CHANNELS">MODERATED_CHANNELS</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;moderation/channels&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#constant_MODERATION_CHAT">MODERATION_CHAT</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;moderation/chat&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#constant_MODERATORS">MODERATORS</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;moderation/moderators&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#constant_POLLS">POLLS</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;polls&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#constant_PREDICTIONS">PREDICTIONS</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;predictions&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#constant_RAIDS">RAIDS</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;raids&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#constant_REGEX">REGEX</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;/:([^\/]+)/&#039;                            </span>
+</dt>
+<dd>Regex identifying `:param` placeholders in an endpoint.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#constant_RELEASED_EXTENSIONS">RELEASED_EXTENSIONS</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;extensions/released&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#constant_SCHEDULE">SCHEDULE</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;schedule&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#constant_SCHEDULE_ICALENDAR">SCHEDULE_ICALENDAR</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;schedule/icalendar&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#constant_SCHEDULE_SEGMENT">SCHEDULE_SEGMENT</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;schedule/segment&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#constant_SCHEDULE_SETTINGS">SCHEDULE_SETTINGS</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;schedule/settings&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#constant_SEARCH_CATEGORIES">SEARCH_CATEGORIES</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;search/categories&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#constant_SEARCH_CHANNELS">SEARCH_CHANNELS</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;search/channels&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#constant_SEND_CHAT_MESSAGE">SEND_CHAT_MESSAGE</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;chat/messages&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#constant_SHARED_CHAT_SESSION">SHARED_CHAT_SESSION</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;shared_chat/session&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#constant_SHIELD_MODE">SHIELD_MODE</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;moderation/shield_mode&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#constant_SHOUTOUTS">SHOUTOUTS</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;chat/shoutouts&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#constant_STREAM_KEY">STREAM_KEY</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;streams/key&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#constant_STREAM_MARKERS">STREAM_MARKERS</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;streams/markers&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#constant_STREAM_TAGS">STREAM_TAGS</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;streams/tags&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#constant_STREAMS">STREAMS</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;streams&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#constant_STREAMS_FOLLOWED">STREAMS_FOLLOWED</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;streams/followed&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#constant_SUBSCRIPTION_USER">SUBSCRIPTION_USER</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;subscriptions/user&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#constant_SUBSCRIPTIONS">SUBSCRIPTIONS</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;subscriptions&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#constant_TEAMS">TEAMS</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;teams&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#constant_TOP_GAMES">TOP_GAMES</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;games/top&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#constant_UNBAN_REQUESTS">UNBAN_REQUESTS</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;moderation/unban_requests&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#constant_USER_BLOCKS">USER_BLOCKS</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;users/blocks&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#constant_USER_CHAT_COLOR">USER_CHAT_COLOR</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;chat/color&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#constant_USER_EMOTES">USER_EMOTES</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;chat/emotes/user&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#constant_USER_EXTENSIONS">USER_EXTENSIONS</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;users/extensions&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#constant_USER_EXTENSIONS_LIST">USER_EXTENSIONS_LIST</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;users/extensions/list&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#constant_USERS">USERS</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;users&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#constant_VIDEOS">VIDEOS</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;videos&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#constant_WARNINGS">WARNINGS</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;moderation/warnings&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#constant_WHISPERS">WHISPERS</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;whispers&#039;                            </span>
+</dt>
+
+    </dl>
+
+
+<h4 id="toc-properties">
+    Properties
+    <a href="classes/Twitch-Http-Endpoint.html#toc-properties" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#property_args">$args</a>
+    <span>
+                        &nbsp;: array&lt;string, string&gt;            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#property_endpoint">$endpoint</a>
+    <span>
+                        &nbsp;: string            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#property_query">$query</a>
+    <span>
+                        &nbsp;: array&lt;string, string|int|bool|array&lt;int|string, string|int&gt;&gt;            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#property_vars">$vars</a>
+    <span>
+                        &nbsp;: array&lt;int, string&gt;            </span>
+</dt>
+
+    </dl>
+
+<h4 id="toc-methods">
+    Methods
+    <a href="classes/Twitch-Http-Endpoint.html#toc-methods" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#method___construct">__construct()</a>
+    <span>
+                                &nbsp;: mixed    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#method___toString">__toString()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#method_addQuery">addQuery()</a>
+    <span>
+                                &nbsp;: self    </span>
+</dt>
+<dd>Adds one query-string pair. Arrays are repeated (`?id=1&amp;id=2`).</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#method_bind">bind()</a>
+    <span>
+                                &nbsp;: self    </span>
+</dt>
+<dd>Creates an endpoint and binds positional path arguments to it.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#method_bindArgs">bindArgs()</a>
+    <span>
+                                &nbsp;: self    </span>
+</dt>
+<dd>Binds positional path arguments, in the order the `:params` appear.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#method_bindAssoc">bindAssoc()</a>
+    <span>
+                                &nbsp;: self    </span>
+</dt>
+<dd>Binds path arguments by name.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#method_getQuery">getQuery()</a>
+    <span>
+                                &nbsp;: array&lt;string, string|int|bool|array&lt;int|string, string|int&gt;&gt;    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#method_toAbsoluteEndpoint">toAbsoluteEndpoint()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+<dd>Renders the endpoint with path params substituted and the query string
+appended. Twitch repeats array params rather than using `key[]`.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#method_withQuery">withQuery()</a>
+    <span>
+                                &nbsp;: self    </span>
+</dt>
+<dd>Merges an associative array of query pairs, skipping null values.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a class="" href="classes/Twitch-Http-Endpoint.html#method_buildQuery">buildQuery()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+
+    </dl>
+
+
+
+        
+    <section class="phpdocumentor-constants">
+        <h3 class="phpdocumentor-elements__header" id="constants">
+            Constants
+            <a href="classes/Twitch-Http-Endpoint.html#constants" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h3>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_AD_SCHEDULE">
+        AD_SCHEDULE
+        <a href="classes/Twitch-Http-Endpoint.html#constant_AD_SCHEDULE" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">30</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">AD_SCHEDULE</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;channels/ads&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_AD_SNOOZE">
+        AD_SNOOZE
+        <a href="classes/Twitch-Http-Endpoint.html#constant_AD_SNOOZE" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">31</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">AD_SNOOZE</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;channels/ads/schedule/snooze&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_ALL_STREAM_TAGS">
+        ALL_STREAM_TAGS
+        <a href="classes/Twitch-Http-Endpoint.html#constant_ALL_STREAM_TAGS" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">161</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">ALL_STREAM_TAGS</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;tags/streams&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_AUTOMOD_HELD_MESSAGE">
+        AUTOMOD_HELD_MESSAGE
+        <a href="classes/Twitch-Http-Endpoint.html#constant_AUTOMOD_HELD_MESSAGE" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">117</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">AUTOMOD_HELD_MESSAGE</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;moderation/automod/message&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_AUTOMOD_SETTINGS">
+        AUTOMOD_SETTINGS
+        <a href="classes/Twitch-Http-Endpoint.html#constant_AUTOMOD_SETTINGS" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">118</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">AUTOMOD_SETTINGS</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;moderation/automod/settings&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_AUTOMOD_STATUS">
+        AUTOMOD_STATUS
+        <a href="classes/Twitch-Http-Endpoint.html#constant_AUTOMOD_STATUS" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">116</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">AUTOMOD_STATUS</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;moderation/enforcements/status&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_BANNED_USERS">
+        BANNED_USERS
+        <a href="classes/Twitch-Http-Endpoint.html#constant_BANNED_USERS" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">119</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">BANNED_USERS</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;moderation/banned&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_BANS">
+        BANS
+        <a href="classes/Twitch-Http-Endpoint.html#constant_BANS" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">120</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">BANS</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;moderation/bans&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_BITS_LEADERBOARD">
+        BITS_LEADERBOARD
+        <a href="classes/Twitch-Http-Endpoint.html#constant_BITS_LEADERBOARD" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">38</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">BITS_LEADERBOARD</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;bits/leaderboard&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_BLOCKED_TERMS">
+        BLOCKED_TERMS
+        <a href="classes/Twitch-Http-Endpoint.html#constant_BLOCKED_TERMS" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">122</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">BLOCKED_TERMS</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;moderation/blocked_terms&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_CCLS">
+        CCLS
+        <a href="classes/Twitch-Http-Endpoint.html#constant_CCLS" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">75</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">CCLS</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;content_classification_labels&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_CHANNEL_CHAT_BADGES">
+        CHANNEL_CHAT_BADGES
+        <a href="classes/Twitch-Http-Endpoint.html#constant_CHANNEL_CHAT_BADGES" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">62</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">CHANNEL_CHAT_BADGES</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;chat/badges&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_CHANNEL_EDITORS">
+        CHANNEL_EDITORS
+        <a href="classes/Twitch-Http-Endpoint.html#constant_CHANNEL_EDITORS" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">44</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">CHANNEL_EDITORS</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;channels/editors&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_CHANNEL_EMOTES">
+        CHANNEL_EMOTES
+        <a href="classes/Twitch-Http-Endpoint.html#constant_CHANNEL_EMOTES" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">58</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">CHANNEL_EMOTES</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;chat/emotes&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_CHANNEL_FOLLOWERS">
+        CHANNEL_FOLLOWERS
+        <a href="classes/Twitch-Http-Endpoint.html#constant_CHANNEL_FOLLOWERS" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">46</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">CHANNEL_FOLLOWERS</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;channels/followers&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_CHANNEL_TEAMS">
+        CHANNEL_TEAMS
+        <a href="classes/Twitch-Http-Endpoint.html#constant_CHANNEL_TEAMS" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">164</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">CHANNEL_TEAMS</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;teams/channel&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_CHANNEL_VIPS">
+        CHANNEL_VIPS
+        <a href="classes/Twitch-Http-Endpoint.html#constant_CHANNEL_VIPS" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">126</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">CHANNEL_VIPS</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;channels/vips&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_CHANNELS">
+        CHANNELS
+        <a href="classes/Twitch-Http-Endpoint.html#constant_CHANNELS" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">43</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">CHANNELS</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;channels&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_CHANNELS_FOLLOWED">
+        CHANNELS_FOLLOWED
+        <a href="classes/Twitch-Http-Endpoint.html#constant_CHANNELS_FOLLOWED" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">45</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">CHANNELS_FOLLOWED</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;channels/followed&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_CHARITY_CAMPAIGN">
+        CHARITY_CAMPAIGN
+        <a href="classes/Twitch-Http-Endpoint.html#constant_CHARITY_CAMPAIGN" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">53</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">CHARITY_CAMPAIGN</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;charity/campaigns&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_CHARITY_DONATIONS">
+        CHARITY_DONATIONS
+        <a href="classes/Twitch-Http-Endpoint.html#constant_CHARITY_DONATIONS" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">54</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">CHARITY_DONATIONS</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;charity/donations&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_CHAT_ANNOUNCEMENTS">
+        CHAT_ANNOUNCEMENTS
+        <a href="classes/Twitch-Http-Endpoint.html#constant_CHAT_ANNOUNCEMENTS" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">66</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">CHAT_ANNOUNCEMENTS</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;chat/announcements&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_CHAT_SETTINGS">
+        CHAT_SETTINGS
+        <a href="classes/Twitch-Http-Endpoint.html#constant_CHAT_SETTINGS" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">64</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">CHAT_SETTINGS</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;chat/settings&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_CHATTERS">
+        CHATTERS
+        <a href="classes/Twitch-Http-Endpoint.html#constant_CHATTERS" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">57</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">CHATTERS</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;chat/chatters&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_CHEERMOTES">
+        CHEERMOTES
+        <a href="classes/Twitch-Http-Endpoint.html#constant_CHEERMOTES" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">39</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">CHEERMOTES</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;bits/cheermotes&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_CLIPS">
+        CLIPS
+        <a href="classes/Twitch-Http-Endpoint.html#constant_CLIPS" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">72</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">CLIPS</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;clips&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_COMMERCIAL">
+        COMMERCIAL
+        <a href="classes/Twitch-Http-Endpoint.html#constant_COMMERCIAL" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">29</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">COMMERCIAL</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;channels/commercial&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_CONDUIT_SHARDS">
+        CONDUIT_SHARDS
+        <a href="classes/Twitch-Http-Endpoint.html#constant_CONDUIT_SHARDS" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">79</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">CONDUIT_SHARDS</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;eventsub/conduits/shards&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_CONDUITS">
+        CONDUITS
+        <a href="classes/Twitch-Http-Endpoint.html#constant_CONDUITS" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">78</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">CONDUITS</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;eventsub/conduits&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_CUSTOM_REWARD_REDEMPTIONS">
+        CUSTOM_REWARD_REDEMPTIONS
+        <a href="classes/Twitch-Http-Endpoint.html#constant_CUSTOM_REWARD_REDEMPTIONS" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">50</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">CUSTOM_REWARD_REDEMPTIONS</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;channel_points/custom_rewards/redemptions&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_CUSTOM_REWARDS">
+        CUSTOM_REWARDS
+        <a href="classes/Twitch-Http-Endpoint.html#constant_CUSTOM_REWARDS" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">49</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">CUSTOM_REWARDS</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;channel_points/custom_rewards&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_DROPS_ENTITLEMENTS">
+        DROPS_ENTITLEMENTS
+        <a href="classes/Twitch-Http-Endpoint.html#constant_DROPS_ENTITLEMENTS" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">82</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">DROPS_ENTITLEMENTS</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;entitlements/drops&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_EMOTE_SETS">
+        EMOTE_SETS
+        <a href="classes/Twitch-Http-Endpoint.html#constant_EMOTE_SETS" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">60</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">EMOTE_SETS</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;chat/emotes/set&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_EVENTSUB_SUBSCRIPTIONS">
+        EVENTSUB_SUBSCRIPTIONS
+        <a href="classes/Twitch-Http-Endpoint.html#constant_EVENTSUB_SUBSCRIPTIONS" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">85</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">EVENTSUB_SUBSCRIPTIONS</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;eventsub/subscriptions&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_EXTENSION_ANALYTICS">
+        EXTENSION_ANALYTICS
+        <a href="classes/Twitch-Http-Endpoint.html#constant_EXTENSION_ANALYTICS" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">34</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">EXTENSION_ANALYTICS</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;analytics/extensions&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_EXTENSION_BITS_PRODUCTS">
+        EXTENSION_BITS_PRODUCTS
+        <a href="classes/Twitch-Http-Endpoint.html#constant_EXTENSION_BITS_PRODUCTS" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">96</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">EXTENSION_BITS_PRODUCTS</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;bits/extensions&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_EXTENSION_CHAT_MESSAGE">
+        EXTENSION_CHAT_MESSAGE
+        <a href="classes/Twitch-Http-Endpoint.html#constant_EXTENSION_CHAT_MESSAGE" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">93</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">EXTENSION_CHAT_MESSAGE</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;extensions/chat&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_EXTENSION_CONFIGURATION">
+        EXTENSION_CONFIGURATION
+        <a href="classes/Twitch-Http-Endpoint.html#constant_EXTENSION_CONFIGURATION" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">88</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">EXTENSION_CONFIGURATION</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;extensions/configurations&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_EXTENSION_LIVE_CHANNELS">
+        EXTENSION_LIVE_CHANNELS
+        <a href="classes/Twitch-Http-Endpoint.html#constant_EXTENSION_LIVE_CHANNELS" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">91</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">EXTENSION_LIVE_CHANNELS</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;extensions/live&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_EXTENSION_PUBSUB_MESSAGE">
+        EXTENSION_PUBSUB_MESSAGE
+        <a href="classes/Twitch-Http-Endpoint.html#constant_EXTENSION_PUBSUB_MESSAGE" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">90</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">EXTENSION_PUBSUB_MESSAGE</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;extensions/pubsub&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_EXTENSION_REQUIRED_CONFIG">
+        EXTENSION_REQUIRED_CONFIG
+        <a href="classes/Twitch-Http-Endpoint.html#constant_EXTENSION_REQUIRED_CONFIG" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">89</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">EXTENSION_REQUIRED_CONFIG</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;extensions/required_configuration&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_EXTENSION_SECRETS">
+        EXTENSION_SECRETS
+        <a href="classes/Twitch-Http-Endpoint.html#constant_EXTENSION_SECRETS" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">92</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">EXTENSION_SECRETS</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;extensions/jwt/secrets&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_EXTENSION_TRANSACTIONS">
+        EXTENSION_TRANSACTIONS
+        <a href="classes/Twitch-Http-Endpoint.html#constant_EXTENSION_TRANSACTIONS" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">40</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">EXTENSION_TRANSACTIONS</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;extensions/transactions&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_EXTENSIONS">
+        EXTENSIONS
+        <a href="classes/Twitch-Http-Endpoint.html#constant_EXTENSIONS" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">94</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">EXTENSIONS</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;extensions&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_GAME_ANALYTICS">
+        GAME_ANALYTICS
+        <a href="classes/Twitch-Http-Endpoint.html#constant_GAME_ANALYTICS" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">35</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">GAME_ANALYTICS</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;analytics/games&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_GAMES">
+        GAMES
+        <a href="classes/Twitch-Http-Endpoint.html#constant_GAMES" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">100</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">GAMES</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;games&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_GLOBAL_CHAT_BADGES">
+        GLOBAL_CHAT_BADGES
+        <a href="classes/Twitch-Http-Endpoint.html#constant_GLOBAL_CHAT_BADGES" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">63</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">GLOBAL_CHAT_BADGES</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;chat/badges/global&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_GLOBAL_EMOTES">
+        GLOBAL_EMOTES
+        <a href="classes/Twitch-Http-Endpoint.html#constant_GLOBAL_EMOTES" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">59</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">GLOBAL_EMOTES</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;chat/emotes/global&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_GOALS">
+        GOALS
+        <a href="classes/Twitch-Http-Endpoint.html#constant_GOALS" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">103</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">GOALS</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;goals&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_GUEST_STAR_CHANNEL_SETTINGS">
+        GUEST_STAR_CHANNEL_SETTINGS
+        <a href="classes/Twitch-Http-Endpoint.html#constant_GUEST_STAR_CHANNEL_SETTINGS" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">106</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">GUEST_STAR_CHANNEL_SETTINGS</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;guest_star/channel_settings&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_GUEST_STAR_INVITES">
+        GUEST_STAR_INVITES
+        <a href="classes/Twitch-Http-Endpoint.html#constant_GUEST_STAR_INVITES" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">108</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">GUEST_STAR_INVITES</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;guest_star/invites&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_GUEST_STAR_SESSION">
+        GUEST_STAR_SESSION
+        <a href="classes/Twitch-Http-Endpoint.html#constant_GUEST_STAR_SESSION" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">107</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">GUEST_STAR_SESSION</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;guest_star/session&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_GUEST_STAR_SLOT">
+        GUEST_STAR_SLOT
+        <a href="classes/Twitch-Http-Endpoint.html#constant_GUEST_STAR_SLOT" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">109</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">GUEST_STAR_SLOT</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;guest_star/slot&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_GUEST_STAR_SLOT_SETTINGS">
+        GUEST_STAR_SLOT_SETTINGS
+        <a href="classes/Twitch-Http-Endpoint.html#constant_GUEST_STAR_SLOT_SETTINGS" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">110</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">GUEST_STAR_SLOT_SETTINGS</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;guest_star/slot_settings&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_HYPE_TRAIN_EVENTS">
+        HYPE_TRAIN_EVENTS
+        <a href="classes/Twitch-Http-Endpoint.html#constant_HYPE_TRAIN_EVENTS" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">113</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">HYPE_TRAIN_EVENTS</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;hypetrain/events&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_MODERATED_CHANNELS">
+        MODERATED_CHANNELS
+        <a href="classes/Twitch-Http-Endpoint.html#constant_MODERATED_CHANNELS" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">124</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">MODERATED_CHANNELS</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;moderation/channels&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_MODERATION_CHAT">
+        MODERATION_CHAT
+        <a href="classes/Twitch-Http-Endpoint.html#constant_MODERATION_CHAT" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">123</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">MODERATION_CHAT</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;moderation/chat&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_MODERATORS">
+        MODERATORS
+        <a href="classes/Twitch-Http-Endpoint.html#constant_MODERATORS" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">125</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">MODERATORS</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;moderation/moderators&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_POLLS">
+        POLLS
+        <a href="classes/Twitch-Http-Endpoint.html#constant_POLLS" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">131</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">POLLS</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;polls&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_PREDICTIONS">
+        PREDICTIONS
+        <a href="classes/Twitch-Http-Endpoint.html#constant_PREDICTIONS" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">134</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">PREDICTIONS</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;predictions&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_RAIDS">
+        RAIDS
+        <a href="classes/Twitch-Http-Endpoint.html#constant_RAIDS" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">137</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">RAIDS</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;raids&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_REGEX">
+        REGEX
+        <a href="classes/Twitch-Http-Endpoint.html#constant_REGEX" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">180</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Regex identifying `:param` placeholders in an endpoint.</p>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">REGEX</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;/:([^\/]+)/&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_RELEASED_EXTENSIONS">
+        RELEASED_EXTENSIONS
+        <a href="classes/Twitch-Http-Endpoint.html#constant_RELEASED_EXTENSIONS" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">95</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">RELEASED_EXTENSIONS</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;extensions/released&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_SCHEDULE">
+        SCHEDULE
+        <a href="classes/Twitch-Http-Endpoint.html#constant_SCHEDULE" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">140</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">SCHEDULE</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;schedule&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_SCHEDULE_ICALENDAR">
+        SCHEDULE_ICALENDAR
+        <a href="classes/Twitch-Http-Endpoint.html#constant_SCHEDULE_ICALENDAR" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">141</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">SCHEDULE_ICALENDAR</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;schedule/icalendar&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_SCHEDULE_SEGMENT">
+        SCHEDULE_SEGMENT
+        <a href="classes/Twitch-Http-Endpoint.html#constant_SCHEDULE_SEGMENT" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">143</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">SCHEDULE_SEGMENT</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;schedule/segment&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_SCHEDULE_SETTINGS">
+        SCHEDULE_SETTINGS
+        <a href="classes/Twitch-Http-Endpoint.html#constant_SCHEDULE_SETTINGS" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">142</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">SCHEDULE_SETTINGS</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;schedule/settings&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_SEARCH_CATEGORIES">
+        SEARCH_CATEGORIES
+        <a href="classes/Twitch-Http-Endpoint.html#constant_SEARCH_CATEGORIES" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">146</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">SEARCH_CATEGORIES</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;search/categories&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_SEARCH_CHANNELS">
+        SEARCH_CHANNELS
+        <a href="classes/Twitch-Http-Endpoint.html#constant_SEARCH_CHANNELS" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">147</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">SEARCH_CHANNELS</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;search/channels&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_SEND_CHAT_MESSAGE">
+        SEND_CHAT_MESSAGE
+        <a href="classes/Twitch-Http-Endpoint.html#constant_SEND_CHAT_MESSAGE" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">68</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">SEND_CHAT_MESSAGE</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;chat/messages&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_SHARED_CHAT_SESSION">
+        SHARED_CHAT_SESSION
+        <a href="classes/Twitch-Http-Endpoint.html#constant_SHARED_CHAT_SESSION" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">65</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">SHARED_CHAT_SESSION</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;shared_chat/session&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_SHIELD_MODE">
+        SHIELD_MODE
+        <a href="classes/Twitch-Http-Endpoint.html#constant_SHIELD_MODE" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">127</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">SHIELD_MODE</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;moderation/shield_mode&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_SHOUTOUTS">
+        SHOUTOUTS
+        <a href="classes/Twitch-Http-Endpoint.html#constant_SHOUTOUTS" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">67</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">SHOUTOUTS</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;chat/shoutouts&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_STREAM_KEY">
+        STREAM_KEY
+        <a href="classes/Twitch-Http-Endpoint.html#constant_STREAM_KEY" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">150</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">STREAM_KEY</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;streams/key&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_STREAM_MARKERS">
+        STREAM_MARKERS
+        <a href="classes/Twitch-Http-Endpoint.html#constant_STREAM_MARKERS" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">153</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">STREAM_MARKERS</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;streams/markers&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_STREAM_TAGS">
+        STREAM_TAGS
+        <a href="classes/Twitch-Http-Endpoint.html#constant_STREAM_TAGS" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">154</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">STREAM_TAGS</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;streams/tags&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_STREAMS">
+        STREAMS
+        <a href="classes/Twitch-Http-Endpoint.html#constant_STREAMS" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">151</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">STREAMS</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;streams&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_STREAMS_FOLLOWED">
+        STREAMS_FOLLOWED
+        <a href="classes/Twitch-Http-Endpoint.html#constant_STREAMS_FOLLOWED" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">152</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">STREAMS_FOLLOWED</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;streams/followed&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_SUBSCRIPTION_USER">
+        SUBSCRIPTION_USER
+        <a href="classes/Twitch-Http-Endpoint.html#constant_SUBSCRIPTION_USER" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">158</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">SUBSCRIPTION_USER</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;subscriptions/user&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_SUBSCRIPTIONS">
+        SUBSCRIPTIONS
+        <a href="classes/Twitch-Http-Endpoint.html#constant_SUBSCRIPTIONS" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">157</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">SUBSCRIPTIONS</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;subscriptions&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_TEAMS">
+        TEAMS
+        <a href="classes/Twitch-Http-Endpoint.html#constant_TEAMS" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">165</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">TEAMS</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;teams&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_TOP_GAMES">
+        TOP_GAMES
+        <a href="classes/Twitch-Http-Endpoint.html#constant_TOP_GAMES" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">99</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">TOP_GAMES</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;games/top&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_UNBAN_REQUESTS">
+        UNBAN_REQUESTS
+        <a href="classes/Twitch-Http-Endpoint.html#constant_UNBAN_REQUESTS" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">121</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">UNBAN_REQUESTS</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;moderation/unban_requests&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_USER_BLOCKS">
+        USER_BLOCKS
+        <a href="classes/Twitch-Http-Endpoint.html#constant_USER_BLOCKS" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">169</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">USER_BLOCKS</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;users/blocks&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_USER_CHAT_COLOR">
+        USER_CHAT_COLOR
+        <a href="classes/Twitch-Http-Endpoint.html#constant_USER_CHAT_COLOR" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">69</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">USER_CHAT_COLOR</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;chat/color&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_USER_EMOTES">
+        USER_EMOTES
+        <a href="classes/Twitch-Http-Endpoint.html#constant_USER_EMOTES" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">61</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">USER_EMOTES</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;chat/emotes/user&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_USER_EXTENSIONS">
+        USER_EXTENSIONS
+        <a href="classes/Twitch-Http-Endpoint.html#constant_USER_EXTENSIONS" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">171</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">USER_EXTENSIONS</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;users/extensions&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_USER_EXTENSIONS_LIST">
+        USER_EXTENSIONS_LIST
+        <a href="classes/Twitch-Http-Endpoint.html#constant_USER_EXTENSIONS_LIST" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">170</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">USER_EXTENSIONS_LIST</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;users/extensions/list&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_USERS">
+        USERS
+        <a href="classes/Twitch-Http-Endpoint.html#constant_USERS" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">168</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">USERS</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;users&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_VIDEOS">
+        VIDEOS
+        <a href="classes/Twitch-Http-Endpoint.html#constant_VIDEOS" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">174</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">VIDEOS</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;videos&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_WARNINGS">
+        WARNINGS
+        <a href="classes/Twitch-Http-Endpoint.html#constant_WARNINGS" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">128</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">WARNINGS</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;moderation/warnings&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_WHISPERS">
+        WHISPERS
+        <a href="classes/Twitch-Http-Endpoint.html#constant_WHISPERS" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">177</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">WHISPERS</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;whispers&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+            </section>
+
+        
+    <section class="phpdocumentor-properties">
+        <h3 class="phpdocumentor-elements__header" id="properties">
+            Properties
+            <a href="classes/Twitch-Http-Endpoint.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h3>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_args">
+        $args
+        <a href="classes/Twitch-Http-Endpoint.html#property_args" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">188</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+            <span class="phpdocumentor-signature__type">array&lt;string, string&gt;</span>
+    <span class="phpdocumentor-signature__name">$args</span>
+     = <span class="phpdocumentor-signature__default-value">[]</span></code>
+
+    
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_endpoint">
+        $endpoint
+        <a href="classes/Twitch-Http-Endpoint.html#property_endpoint" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">182</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+            <span class="phpdocumentor-signature__type">string</span>
+    <span class="phpdocumentor-signature__name">$endpoint</span>
+    </code>
+
+    
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_query">
+        $query
+        <a href="classes/Twitch-Http-Endpoint.html#property_query" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">191</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+            <span class="phpdocumentor-signature__type">array&lt;string, string|int|bool|array&lt;int|string, string|int&gt;&gt;</span>
+    <span class="phpdocumentor-signature__name">$query</span>
+     = <span class="phpdocumentor-signature__default-value">[]</span></code>
+
+    
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_vars">
+        $vars
+        <a href="classes/Twitch-Http-Endpoint.html#property_vars" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">185</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+            <span class="phpdocumentor-signature__type">array&lt;int, string&gt;</span>
+    <span class="phpdocumentor-signature__name">$vars</span>
+     = <span class="phpdocumentor-signature__default-value">[]</span></code>
+
+    
+    
+    
+
+        
+        
+
+</article>
+            </section>
+
+            <section class="phpdocumentor-methods">
+        <h3 class="phpdocumentor-elements__header" id="methods">
+            Methods
+            <a href="classes/Twitch-Http-Endpoint.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h3>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method___construct">
+        __construct()
+        <a href="classes/Twitch-Http-Endpoint.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">193</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$endpoint</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$endpoint</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method___toString">
+        __toString()
+        <a href="classes/Twitch-Http-Endpoint.html#method___toString" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">299</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">__toString</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_addQuery">
+        addQuery()
+        <a href="classes/Twitch-Http-Endpoint.html#method_addQuery" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">237</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Adds one query-string pair. Arrays are repeated (`?id=1&amp;id=2`).</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">addQuery</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$key</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">string|int|bool|array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$key</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$value</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string|int|bool|array&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">self</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_bind">
+        bind()
+        <a href="classes/Twitch-Http-Endpoint.html#method_bind" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">205</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Creates an endpoint and binds positional path arguments to it.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">bind</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$endpoint</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">string|int&nbsp;</span><span class="phpdocumentor-signature__argument__variadic-operator">...</span><span class="phpdocumentor-signature__argument__name">$args</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$endpoint</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$args</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string|int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">self</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_bindArgs">
+        bindArgs()
+        <a href="classes/Twitch-Http-Endpoint.html#method_bindArgs" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">211</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Binds positional path arguments, in the order the `:params` appear.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">bindArgs</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string|int&nbsp;</span><span class="phpdocumentor-signature__argument__variadic-operator">...</span><span class="phpdocumentor-signature__argument__name">$args</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$args</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string|int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">self</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_bindAssoc">
+        bindAssoc()
+        <a href="classes/Twitch-Http-Endpoint.html#method_bindAssoc" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">227</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Binds path arguments by name.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">bindAssoc</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;string, string|int&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$args</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$args</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string, string|int&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">self</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getQuery">
+        getQuery()
+        <a href="classes/Twitch-Http-Endpoint.html#method_getQuery" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">261</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getQuery</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string, string|int|bool|array&lt;int|string, string|int&gt;&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array&lt;string, string|int|bool|array&lt;int|string, string|int&gt;&gt;</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_toAbsoluteEndpoint">
+        toAbsoluteEndpoint()
+        <a href="classes/Twitch-Http-Endpoint.html#method_toAbsoluteEndpoint" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">270</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Renders the endpoint with path params substituted and the query string
+appended. Twitch repeats array params rather than using `key[]`.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">toAbsoluteEndpoint</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$onlyMajorParameters</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$onlyMajorParameters</span>
+                : <span class="phpdocumentor-argument-list__argument__type">bool</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">false</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_withQuery">
+        withQuery()
+        <a href="classes/Twitch-Http-Endpoint.html#method_withQuery" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">249</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Merges an associative array of query pairs, skipping null values.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">withQuery</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;string, string|int|bool|array&lt;int, string|int&gt;|null&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$query</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$query</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string, string|int|bool|array&lt;int, string|int&gt;|null&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">self</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_buildQuery">
+        buildQuery()
+        <a href="classes/Twitch-Http-Endpoint.html#method_buildQuery" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Endpoint.php"><a href="files/src-twitch-endpoint.html"><abbr title="src/Twitch/Endpoint.php">Endpoint.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">287</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">buildQuery</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
+</article>
+            </section>
+
+        
+    </article>
+                                </section>
+                <section class="phpdocumentor-on-this-page__sidebar">
+                                
+    <section class="phpdocumentor-on-this-page__content">
+        <strong class="phpdocumentor-on-this-page__title">On this page</strong>
+
+        <ul class="phpdocumentor-list -clean">
+            <li class="phpdocumentor-on-this-page-section__title">Table Of Contents</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                        <li><a href="classes/Twitch-Http-Endpoint.html#toc-constants">Constants</a></li>
+                                                            <li><a href="classes/Twitch-Http-Endpoint.html#toc-properties">Properties</a></li>
+                                                            <li><a href="classes/Twitch-Http-Endpoint.html#toc-methods">Methods</a></li>
+                                    </ul>
+            </li>
+                            <li class="phpdocumentor-on-this-page-section__title">Constants</li>
+                <li>
+                    <ul class="phpdocumentor-list -clean">
+                                                    <li class=""><a href="classes/Twitch-Http-Endpoint.html#constant_AD_SCHEDULE">AD_SCHEDULE</a></li>
+                                                    <li class=""><a href="classes/Twitch-Http-Endpoint.html#constant_AD_SNOOZE">AD_SNOOZE</a></li>
+                                                    <li class=""><a href="classes/Twitch-Http-Endpoint.html#constant_ALL_STREAM_TAGS">ALL_STREAM_TAGS</a></li>
+                                                    <li class=""><a href="classes/Twitch-Http-Endpoint.html#constant_AUTOMOD_HELD_MESSAGE">AUTOMOD_HELD_MESSAGE</a></li>
+                                                    <li class=""><a href="classes/Twitch-Http-Endpoint.html#constant_AUTOMOD_SETTINGS">AUTOMOD_SETTINGS</a></li>
+                                                    <li class=""><a href="classes/Twitch-Http-Endpoint.html#constant_AUTOMOD_STATUS">AUTOMOD_STATUS</a></li>
+                                                    <li class=""><a href="classes/Twitch-Http-Endpoint.html#constant_BANNED_USERS">BANNED_USERS</a></li>
+                                                    <li class=""><a href="classes/Twitch-Http-Endpoint.html#constant_BANS">BANS</a></li>
+                                                    <li class=""><a href="classes/Twitch-Http-Endpoint.html#constant_BITS_LEADERBOARD">BITS_LEADERBOARD</a></li>
+                                                    <li class=""><a href="classes/Twitch-Http-Endpoint.html#constant_BLOCKED_TERMS">BLOCKED_TERMS</a></li>
+                                                    <li class=""><a href="classes/Twitch-Http-Endpoint.html#constant_CCLS">CCLS</a></li>
+                                                    <li class=""><a href="classes/Twitch-Http-Endpoint.html#constant_CHANNEL_CHAT_BADGES">CHANNEL_CHAT_BADGES</a></li>
+                                                    <li class=""><a href="classes/Twitch-Http-Endpoint.html#constant_CHANNEL_EDITORS">CHANNEL_EDITORS</a></li>
+                                                    <li class=""><a href="classes/Twitch-Http-Endpoint.html#constant_CHANNEL_EMOTES">CHANNEL_EMOTES</a></li>
+                                                    <li class=""><a href="classes/Twitch-Http-Endpoint.html#constant_CHANNEL_FOLLOWERS">CHANNEL_FOLLOWERS</a></li>
+                                                    <li class=""><a href="classes/Twitch-Http-Endpoint.html#constant_CHANNEL_TEAMS">CHANNEL_TEAMS</a></li>
+                                                    <li class=""><a href="classes/Twitch-Http-Endpoint.html#constant_CHANNEL_VIPS">CHANNEL_VIPS</a></li>
+                                                    <li class=""><a href="classes/Twitch-Http-Endpoint.html#constant_CHANNELS">CHANNELS</a></li>
+                                                    <li class=""><a href="classes/Twitch-Http-Endpoint.html#constant_CHANNELS_FOLLOWED">CHANNELS_FOLLOWED</a></li>
+                                                    <li class=""><a href="classes/Twitch-Http-Endpoint.html#constant_CHARITY_CAMPAIGN">CHARITY_CAMPAIGN</a></li>
+                                                    <li class=""><a href="classes/Twitch-Http-Endpoint.html#constant_CHARITY_DONATIONS">CHARITY_DONATIONS</a></li>
+                                                    <li class=""><a href="classes/Twitch-Http-Endpoint.html#constant_CHAT_ANNOUNCEMENTS">CHAT_ANNOUNCEMENTS</a></li>
+                                                    <li class=""><a href="classes/Twitch-Http-Endpoint.html#constant_CHAT_SETTINGS">CHAT_SETTINGS</a></li>
+                                                    <li class=""><a href="classes/Twitch-Http-Endpoint.html#constant_CHATTERS">CHATTERS</a></li>
+                                                    <li class=""><a href="classes/Twitch-Http-Endpoint.html#constant_CHEERMOTES">CHEERMOTES</a></li>
+                                                    <li class=""><a href="classes/Twitch-Http-Endpoint.html#constant_CLIPS">CLIPS</a></li>
+                                                    <li class=""><a href="classes/Twitch-Http-Endpoint.html#constant_COMMERCIAL">COMMERCIAL</a></li>
+                                                    <li class=""><a href="classes/Twitch-Http-Endpoint.html#constant_CONDUIT_SHARDS">CONDUIT_SHARDS</a></li>
+                                                    <li class=""><a href="classes/Twitch-Http-Endpoint.html#constant_CONDUITS">CONDUITS</a></li>
+                                                    <li class=""><a href="classes/Twitch-Http-Endpoint.html#constant_CUSTOM_REWARD_REDEMPTIONS">CUSTOM_REWARD_REDEMPTIONS</a></li>
+                                                    <li class=""><a href="classes/Twitch-Http-Endpoint.html#constant_CUSTOM_REWARDS">CUSTOM_REWARDS</a></li>
+                                                    <li class=""><a href="classes/Twitch-Http-Endpoint.html#constant_DROPS_ENTITLEMENTS">DROPS_ENTITLEMENTS</a></li>
+                                                    <li class=""><a href="classes/Twitch-Http-Endpoint.html#constant_EMOTE_SETS">EMOTE_SETS</a></li>
+                                                    <li class=""><a href="classes/Twitch-Http-Endpoint.html#constant_EVENTSUB_SUBSCRIPTIONS">EVENTSUB_SUBSCRIPTIONS</a></li>
+                                                    <li class=""><a href="classes/Twitch-Http-Endpoint.html#constant_EXTENSION_ANALYTICS">EXTENSION_ANALYTICS</a></li>
+                                                    <li class=""><a href="classes/Twitch-Http-Endpoint.html#constant_EXTENSION_BITS_PRODUCTS">EXTENSION_BITS_PRODUCTS</a></li>
+                                                    <li class=""><a href="classes/Twitch-Http-Endpoint.html#constant_EXTENSION_CHAT_MESSAGE">EXTENSION_CHAT_MESSAGE</a></li>
+                                                    <li class=""><a href="classes/Twitch-Http-Endpoint.html#constant_EXTENSION_CONFIGURATION">EXTENSION_CONFIGURATION</a></li>
+                                                    <li class=""><a href="classes/Twitch-Http-Endpoint.html#constant_EXTENSION_LIVE_CHANNELS">EXTENSION_LIVE_CHANNELS</a></li>
+                                                    <li class=""><a href="classes/Twitch-Http-Endpoint.html#constant_EXTENSION_PUBSUB_MESSAGE">EXTENSION_PUBSUB_MESSAGE</a></li>
+                                                    <li class=""><a href="classes/Twitch-Http-Endpoint.html#constant_EXTENSION_REQUIRED_CONFIG">EXTENSION_REQUIRED_CONFIG</a></li>
+                                                    <li class=""><a href="classes/Twitch-Http-Endpoint.html#constant_EXTENSION_SECRETS">EXTENSION_SECRETS</a></li>
+                                                    <li class=""><a href="classes/Twitch-Http-Endpoint.html#constant_EXTENSION_TRANSACTIONS">EXTENSION_TRANSACTIONS</a></li>
+                                                    <li class=""><a href="classes/Twitch-Http-Endpoint.html#constant_EXTENSIONS">EXTENSIONS</a></li>
+                                                    <li class=""><a href="classes/Twitch-Http-Endpoint.html#constant_GAME_ANALYTICS">GAME_ANALYTICS</a></li>
+                                                    <li class=""><a href="classes/Twitch-Http-Endpoint.html#constant_GAMES">GAMES</a></li>
+                                                    <li class=""><a href="classes/Twitch-Http-Endpoint.html#constant_GLOBAL_CHAT_BADGES">GLOBAL_CHAT_BADGES</a></li>
+                                                    <li class=""><a href="classes/Twitch-Http-Endpoint.html#constant_GLOBAL_EMOTES">GLOBAL_EMOTES</a></li>
+                                                    <li class=""><a href="classes/Twitch-Http-Endpoint.html#constant_GOALS">GOALS</a></li>
+                                                    <li class=""><a href="classes/Twitch-Http-Endpoint.html#constant_GUEST_STAR_CHANNEL_SETTINGS">GUEST_STAR_CHANNEL_SETTINGS</a></li>
+                                                    <li class=""><a href="classes/Twitch-Http-Endpoint.html#constant_GUEST_STAR_INVITES">GUEST_STAR_INVITES</a></li>
+                                                    <li class=""><a href="classes/Twitch-Http-Endpoint.html#constant_GUEST_STAR_SESSION">GUEST_STAR_SESSION</a></li>
+                                                    <li class=""><a href="classes/Twitch-Http-Endpoint.html#constant_GUEST_STAR_SLOT">GUEST_STAR_SLOT</a></li>
+                                                    <li class=""><a href="classes/Twitch-Http-Endpoint.html#constant_GUEST_STAR_SLOT_SETTINGS">GUEST_STAR_SLOT_SETTINGS</a></li>
+                                                    <li class=""><a href="classes/Twitch-Http-Endpoint.html#constant_HYPE_TRAIN_EVENTS">HYPE_TRAIN_EVENTS</a></li>
+                                                    <li class=""><a href="classes/Twitch-Http-Endpoint.html#constant_MODERATED_CHANNELS">MODERATED_CHANNELS</a></li>
+                                                    <li class=""><a href="classes/Twitch-Http-Endpoint.html#constant_MODERATION_CHAT">MODERATION_CHAT</a></li>
+                                                    <li class=""><a href="classes/Twitch-Http-Endpoint.html#constant_MODERATORS">MODERATORS</a></li>
+                                                    <li class=""><a href="classes/Twitch-Http-Endpoint.html#constant_POLLS">POLLS</a></li>
+                                                    <li class=""><a href="classes/Twitch-Http-Endpoint.html#constant_PREDICTIONS">PREDICTIONS</a></li>
+                                                    <li class=""><a href="classes/Twitch-Http-Endpoint.html#constant_RAIDS">RAIDS</a></li>
+                                                    <li class=""><a href="classes/Twitch-Http-Endpoint.html#constant_REGEX">REGEX</a></li>
+                                                    <li class=""><a href="classes/Twitch-Http-Endpoint.html#constant_RELEASED_EXTENSIONS">RELEASED_EXTENSIONS</a></li>
+                                                    <li class=""><a href="classes/Twitch-Http-Endpoint.html#constant_SCHEDULE">SCHEDULE</a></li>
+                                                    <li class=""><a href="classes/Twitch-Http-Endpoint.html#constant_SCHEDULE_ICALENDAR">SCHEDULE_ICALENDAR</a></li>
+                                                    <li class=""><a href="classes/Twitch-Http-Endpoint.html#constant_SCHEDULE_SEGMENT">SCHEDULE_SEGMENT</a></li>
+                                                    <li class=""><a href="classes/Twitch-Http-Endpoint.html#constant_SCHEDULE_SETTINGS">SCHEDULE_SETTINGS</a></li>
+                                                    <li class=""><a href="classes/Twitch-Http-Endpoint.html#constant_SEARCH_CATEGORIES">SEARCH_CATEGORIES</a></li>
+                                                    <li class=""><a href="classes/Twitch-Http-Endpoint.html#constant_SEARCH_CHANNELS">SEARCH_CHANNELS</a></li>
+                                                    <li class=""><a href="classes/Twitch-Http-Endpoint.html#constant_SEND_CHAT_MESSAGE">SEND_CHAT_MESSAGE</a></li>
+                                                    <li class=""><a href="classes/Twitch-Http-Endpoint.html#constant_SHARED_CHAT_SESSION">SHARED_CHAT_SESSION</a></li>
+                                                    <li class=""><a href="classes/Twitch-Http-Endpoint.html#constant_SHIELD_MODE">SHIELD_MODE</a></li>
+                                                    <li class=""><a href="classes/Twitch-Http-Endpoint.html#constant_SHOUTOUTS">SHOUTOUTS</a></li>
+                                                    <li class=""><a href="classes/Twitch-Http-Endpoint.html#constant_STREAM_KEY">STREAM_KEY</a></li>
+                                                    <li class=""><a href="classes/Twitch-Http-Endpoint.html#constant_STREAM_MARKERS">STREAM_MARKERS</a></li>
+                                                    <li class=""><a href="classes/Twitch-Http-Endpoint.html#constant_STREAM_TAGS">STREAM_TAGS</a></li>
+                                                    <li class=""><a href="classes/Twitch-Http-Endpoint.html#constant_STREAMS">STREAMS</a></li>
+                                                    <li class=""><a href="classes/Twitch-Http-Endpoint.html#constant_STREAMS_FOLLOWED">STREAMS_FOLLOWED</a></li>
+                                                    <li class=""><a href="classes/Twitch-Http-Endpoint.html#constant_SUBSCRIPTION_USER">SUBSCRIPTION_USER</a></li>
+                                                    <li class=""><a href="classes/Twitch-Http-Endpoint.html#constant_SUBSCRIPTIONS">SUBSCRIPTIONS</a></li>
+                                                    <li class=""><a href="classes/Twitch-Http-Endpoint.html#constant_TEAMS">TEAMS</a></li>
+                                                    <li class=""><a href="classes/Twitch-Http-Endpoint.html#constant_TOP_GAMES">TOP_GAMES</a></li>
+                                                    <li class=""><a href="classes/Twitch-Http-Endpoint.html#constant_UNBAN_REQUESTS">UNBAN_REQUESTS</a></li>
+                                                    <li class=""><a href="classes/Twitch-Http-Endpoint.html#constant_USER_BLOCKS">USER_BLOCKS</a></li>
+                                                    <li class=""><a href="classes/Twitch-Http-Endpoint.html#constant_USER_CHAT_COLOR">USER_CHAT_COLOR</a></li>
+                                                    <li class=""><a href="classes/Twitch-Http-Endpoint.html#constant_USER_EMOTES">USER_EMOTES</a></li>
+                                                    <li class=""><a href="classes/Twitch-Http-Endpoint.html#constant_USER_EXTENSIONS">USER_EXTENSIONS</a></li>
+                                                    <li class=""><a href="classes/Twitch-Http-Endpoint.html#constant_USER_EXTENSIONS_LIST">USER_EXTENSIONS_LIST</a></li>
+                                                    <li class=""><a href="classes/Twitch-Http-Endpoint.html#constant_USERS">USERS</a></li>
+                                                    <li class=""><a href="classes/Twitch-Http-Endpoint.html#constant_VIDEOS">VIDEOS</a></li>
+                                                    <li class=""><a href="classes/Twitch-Http-Endpoint.html#constant_WARNINGS">WARNINGS</a></li>
+                                                    <li class=""><a href="classes/Twitch-Http-Endpoint.html#constant_WHISPERS">WHISPERS</a></li>
+                                            </ul>
+                </li>
+            
+                            <li class="phpdocumentor-on-this-page-section__title">Properties</li>
+                <li>
+                    <ul class="phpdocumentor-list -clean">
+                                                    <li class=""><a href="classes/Twitch-Http-Endpoint.html#property_args">$args</a></li>
+                                                    <li class=""><a href="classes/Twitch-Http-Endpoint.html#property_endpoint">$endpoint</a></li>
+                                                    <li class=""><a href="classes/Twitch-Http-Endpoint.html#property_query">$query</a></li>
+                                                    <li class=""><a href="classes/Twitch-Http-Endpoint.html#property_vars">$vars</a></li>
+                                            </ul>
+                </li>
+            
+                        <li class="phpdocumentor-on-this-page-section__title">Methods</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                            <li class=""><a href="classes/Twitch-Http-Endpoint.html#method___construct">__construct()</a></li>
+                                            <li class=""><a href="classes/Twitch-Http-Endpoint.html#method___toString">__toString()</a></li>
+                                            <li class=""><a href="classes/Twitch-Http-Endpoint.html#method_addQuery">addQuery()</a></li>
+                                            <li class=""><a href="classes/Twitch-Http-Endpoint.html#method_bind">bind()</a></li>
+                                            <li class=""><a href="classes/Twitch-Http-Endpoint.html#method_bindArgs">bindArgs()</a></li>
+                                            <li class=""><a href="classes/Twitch-Http-Endpoint.html#method_bindAssoc">bindAssoc()</a></li>
+                                            <li class=""><a href="classes/Twitch-Http-Endpoint.html#method_getQuery">getQuery()</a></li>
+                                            <li class=""><a href="classes/Twitch-Http-Endpoint.html#method_toAbsoluteEndpoint">toAbsoluteEndpoint()</a></li>
+                                            <li class=""><a href="classes/Twitch-Http-Endpoint.html#method_withQuery">withQuery()</a></li>
+                                            <li class=""><a href="classes/Twitch-Http-Endpoint.html#method_buildQuery">buildQuery()</a></li>
+                                    </ul>
+            </li>
+                    </ul>
+    </section>
+
+                </section>
+                            </div>
+            <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+    <section class="phpdocumentor-search-results__dialog">
+        <header class="phpdocumentor-search-results__header">
+            <h2 class="phpdocumentor-search-results__title">Search results</h2>
+            <button class="phpdocumentor-search-results__close"><i class="fas fa-times"></i></button>
+        </header>
+        <section class="phpdocumentor-search-results__body">
+            <ul class="phpdocumentor-search-results__entries"></ul>
+        </section>
+    </section>
+</section>
+        </div>
+        <a href="classes/Twitch-Http-Endpoint.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <script>
+        cssVars({});
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/prism.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/autoloader/prism-autoloader.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.min.js"></script>
+</body>
+</html>
