@@ -1,6 +1,7 @@
 {
     "name": "twitchphp/http",
-    "description": "Handles HTTP requests to Twitch servers",
+    "description": "Non-blocking HTTP client and OAuth2 helper for the Twitch Helix API, on ReactPHP.",
+    "keywords": ["twitch", "helix", "twitchphp", "http", "oauth2", "reactphp", "async"],
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -9,28 +10,41 @@
             "email": "valithor@valgorithms.com"
         }
     ],
-    "autoload": {
-        "psr-4": {
-            "Twitch\\Http\\": "src/Twitch",
-            "Tests\\Twitch\\Http\\": "tests/Twitch"
-        }
+    "support": {
+        "issues": "https://github.com/valzargaming/TwitchPHP-Http/issues",
+        "source": "https://github.com/valzargaming/TwitchPHP-Http"
     },
     "require": {
-        "php": "^7.4|^8.0",
+        "php": "^8.1",
+        "psr/http-message": "^1.1 || ^2.0",
         "psr/log": "^1.1 || ^2.0 || ^3.0",
-        "react/http": "^1.2",
-        "react/promise": "^2.2"
-    },
-    "suggest": {
-        "guzzlehttp/guzzle": "For alternative to ReactPHP/Http Browser"
+        "react/event-loop": "^1.5",
+        "react/http": "^1.11",
+        "react/promise": "^3.2 || ^2.11",
+        "react/socket": "^1.16"
     },
     "require-dev": {
-        "friendsofphp/php-cs-fixer": "^2.17",
-        "guzzlehttp/guzzle": "^6.0|^7.0",
-        "mockery/mockery": "^1.5",
-        "monolog/monolog": "^2.1.1 || ^3.0",
-        "psy/psysh": "^0.10.6",
-        "phpunit/phpunit": "^9.5",
-        "react/async": "^4 || ^3"
+        "friendsofphp/php-cs-fixer": "^3.64",
+        "phpunit/phpunit": "^10.5 || ^9.6",
+        "react/async": "^4.3 || ^3.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Twitch\\Http\\": "src/Twitch"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Twitch\\Http\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "cs": "php-cs-fixer fix",
+        "test": "phpunit"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "sort-packages": true
     }
 }
