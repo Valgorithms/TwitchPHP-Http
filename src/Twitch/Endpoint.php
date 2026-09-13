@@ -37,6 +37,7 @@ class Endpoint
     // ── Bits ─────────────────────────────────────────────────────────────
     public const BITS_LEADERBOARD        = 'bits/leaderboard';                   // GET
     public const CHEERMOTES              = 'bits/cheermotes';                    // GET
+    public const CUSTOM_POWER_UPS        = 'bits/custom_power_ups';              // GET
     public const EXTENSION_TRANSACTIONS  = 'extensions/transactions';            // GET
 
     // ── Channels ─────────────────────────────────────────────────────────
@@ -66,10 +67,13 @@ class Endpoint
     public const CHAT_ANNOUNCEMENTS      = 'chat/announcements';                 // POST
     public const SHOUTOUTS               = 'chat/shoutouts';                     // POST
     public const SEND_CHAT_MESSAGE       = 'chat/messages';                      // POST
+    public const CHAT_PINS               = 'chat/pins';                          // GET, PUT, PATCH, DELETE
     public const USER_CHAT_COLOR         = 'chat/color';                         // GET, PUT
 
     // ── Clips ────────────────────────────────────────────────────────────
     public const CLIPS                   = 'clips';                              // GET, POST
+    public const CLIP_FROM_VOD           = 'videos/clips';                       // POST
+    public const CLIP_DOWNLOADS          = 'clips/downloads';                    // GET
 
     // ── Content Classification Labels ────────────────────────────────────
     public const CCLS                    = 'content_classification_labels';      // GET
@@ -110,7 +114,9 @@ class Endpoint
     public const GUEST_STAR_SLOT_SETTINGS = 'guest_star/slot_settings';         // PATCH
 
     // ── Hype Train ───────────────────────────────────────────────────────
-    public const HYPE_TRAIN_EVENTS       = 'hypetrain/events';                  // GET
+    /** @deprecated Withdrawn by Twitch — returns 410. Use {@see HYPE_TRAIN_STATUS}. */
+    public const HYPE_TRAIN_EVENTS       = 'hypetrain/events';                  // GET (withdrawn)
+    public const HYPE_TRAIN_STATUS       = 'hypetrain/status';                  // GET
 
     // ── Moderation ───────────────────────────────────────────────────────
     public const AUTOMOD_STATUS          = 'moderation/enforcements/status';    // POST
@@ -126,6 +132,7 @@ class Endpoint
     public const CHANNEL_VIPS            = 'channels/vips';                     // GET, POST, DELETE
     public const SHIELD_MODE             = 'moderation/shield_mode';            // GET, PUT
     public const WARNINGS                = 'moderation/warnings';               // POST
+    public const SUSPICIOUS_USERS        = 'moderation/suspicious_users';       // POST, DELETE
 
     // ── Polls ────────────────────────────────────────────────────────────
     public const POLLS                   = 'polls';                             // GET, POST, PATCH
