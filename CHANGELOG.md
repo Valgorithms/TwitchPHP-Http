@@ -3,6 +3,25 @@
 All notable changes to `twitchphp/http` are documented here. The format follows
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and the project uses SemVer.
 
+## [Unreleased]
+
+### Added
+
+- `MissingScopeException` — raised when the token is valid but was not granted
+  a scope the endpoint requires. Deliberately *not* an `InvalidTokenException`,
+  because re-issuing the token cannot widen a grant. Its `$scopes` property
+  holds the scopes Twitch named, any one of which would have satisfied the call.
+
+### Fixed
+
+- 401 responses are no longer all mapped to `InvalidTokenException`. Twitch
+  overloads the status for three unrelated conditions, and only one is worth
+  re-issuing a token over: a narrow grant now raises `MissingScopeException`,
+  an endpoint demanding a different kind of token (e.g. conduits, which accept
+  app access tokens only) raises a plain `HttpException`, and everything else —
+  including wording we do not recognise — still raises `InvalidTokenException`
+  so a genuine expiry keeps triggering a refresh.
+
 ## [1.0.0] - 2026-09-08
 
 Initial usable release. The package previously contained an unfinished copy of
