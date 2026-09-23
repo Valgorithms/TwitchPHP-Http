@@ -101,10 +101,10 @@
 
     <article class="phpdocumentor-element -class">
         <h2 class="phpdocumentor-content__title">
-    HttpException
+    MissingScopeException
 
         <span class="phpdocumentor-element__extends">
-        extends <abbr title="\RuntimeException">RuntimeException</abbr>
+        extends <a href="classes/Twitch-Http-Exceptions-HttpException.html"><abbr title="\Twitch\Http\Exceptions\HttpException">HttpException</abbr></a>
     </span>
     
             <div class="phpdocumentor-element__package">
@@ -123,16 +123,21 @@
 </div>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Exceptions/HttpException.php"><a href="files/src-twitch-exceptions-httpexception.html"><abbr title="src/Twitch/Exceptions/HttpException.php">HttpException.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Exceptions/MissingScopeException.php"><a href="files/src-twitch-exceptions-missingscopeexception.html"><abbr title="src/Twitch/Exceptions/MissingScopeException.php">MissingScopeException.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">22</span>
+    <span class="phpdocumentor-element-found-in__line">27</span>
 
     </aside>
 
-            <p class="phpdocumentor-summary">Base class for every error surfaced by {@see \Twitch\Http\Http}.</p>
+            <p class="phpdocumentor-summary">The token is valid, but was not granted a scope the endpoint requires.</p>
 
 
-    <section class="phpdocumentor-description"><p>Carries the HTTP status, the decoded Twitch error body (<code class="prettyprint">{status, error, message}</code>), and the raw response when one is available.</p>
+    <section class="phpdocumentor-description"><p>Deliberately <em>not</em> an <a href="classes/Twitch-Http-Exceptions-InvalidTokenException.html"><abbr title="\Twitch\Http\Exceptions\InvalidTokenException">InvalidTokenException</abbr></a>: refreshing or
+re-issuing the token changes nothing, because the grant itself is too
+narrow. Recovering means sending the user back through authorization
+with the missing scopes requested.</p>
+<p>$scopes holds the scopes Twitch named, any <em>one</em> of which would
+have satisfied the endpoint.</p>
 </section>
 
 
@@ -141,7 +146,7 @@
     
 <h3 id="toc">
     Table of Contents
-    <a href="classes/Twitch-Http-Exceptions-HttpException.html#toc" class="headerlink"><i class="fas fa-link"></i></a>
+    <a href="classes/Twitch-Http-Exceptions-MissingScopeException.html#toc" class="headerlink"><i class="fas fa-link"></i></a>
 
 </h3>
 
@@ -155,7 +160,7 @@
 
 <h4 id="toc-properties">
     Properties
-    <a href="classes/Twitch-Http-Exceptions-HttpException.html#toc-properties" class="headerlink"><i class="fas fa-link"></i></a>
+    <a href="classes/Twitch-Http-Exceptions-MissingScopeException.html#toc-properties" class="headerlink"><i class="fas fa-link"></i></a>
 
 </h4>
 <dl class="phpdocumentor-table-of-contents">
@@ -172,6 +177,12 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a class="" href="classes/Twitch-Http-Exceptions-MissingScopeException.html#property_scopes">$scopes</a>
+    <span>
+                        &nbsp;: array&lt;int, string&gt;            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a class="" href="classes/Twitch-Http-Exceptions-HttpException.html#property_status">$status</a>
     <span>
                         &nbsp;: int            </span>
@@ -181,12 +192,12 @@
 
 <h4 id="toc-methods">
     Methods
-    <a href="classes/Twitch-Http-Exceptions-HttpException.html#toc-methods" class="headerlink"><i class="fas fa-link"></i></a>
+    <a href="classes/Twitch-Http-Exceptions-MissingScopeException.html#toc-methods" class="headerlink"><i class="fas fa-link"></i></a>
 
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/Twitch-Http-Exceptions-HttpException.html#method___construct">__construct()</a>
+    <a class="" href="classes/Twitch-Http-Exceptions-MissingScopeException.html#method___construct">__construct()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
@@ -199,12 +210,11 @@
 <dd>Builds the right exception subclass for a failed response.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
-    <a class="" href="classes/Twitch-Http-Exceptions-HttpException.html#method_classifyUnauthorized">classifyUnauthorized()</a>
+    <a class="" href="classes/Twitch-Http-Exceptions-MissingScopeException.html#method_parseScopes">parseScopes()</a>
     <span>
-                                &nbsp;: string    </span>
+                                &nbsp;: array&lt;int, string&gt;    </span>
 </dt>
-<dd>Twitch overloads 401 for three unrelated conditions, and only one of
-them is worth re-issuing a token over:</dd>
+<dd>Pulls the scope names out of `Missing scope: a:b or c:d`.</dd>
 
     </dl>
 
@@ -216,7 +226,7 @@ them is worth re-issuing a token over:</dd>
     <section class="phpdocumentor-properties">
         <h3 class="phpdocumentor-elements__header" id="properties">
             Properties
-            <a href="classes/Twitch-Http-Exceptions-HttpException.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/Twitch-Http-Exceptions-MissingScopeException.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
 
         </h3>
                     <article
@@ -300,6 +310,43 @@ them is worth re-issuing a token over:</dd>
             -public
                                                 -read-only                    "
 >
+    <h4 class="phpdocumentor-element__name" id="property_scopes">
+        $scopes
+        <a href="classes/Twitch-Http-Exceptions-MissingScopeException.html#property_scopes" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                        <small class="phpdocumentor-element__modifier">read-only</small>                    </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Exceptions/MissingScopeException.php"><a href="files/src-twitch-exceptions-missingscopeexception.html"><abbr title="src/Twitch/Exceptions/MissingScopeException.php">MissingScopeException.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">30</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__type">array&lt;int, string&gt;</span>
+    <span class="phpdocumentor-signature__name">$scopes</span>
+    </code>
+
+    
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                -read-only                    "
+>
     <h4 class="phpdocumentor-element__name" id="property_status">
         $status
         <a href="classes/Twitch-Http-Exceptions-HttpException.html#property_status" class="headerlink"><i class="fas fa-link"></i></a>
@@ -335,7 +382,7 @@ them is worth re-issuing a token over:</dd>
             <section class="phpdocumentor-methods">
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
-            <a href="classes/Twitch-Http-Exceptions-HttpException.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/Twitch-Http-Exceptions-MissingScopeException.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
 
         </h3>
                     <article
@@ -346,20 +393,20 @@ them is worth re-issuing a token over:</dd>
 >
     <h4 class="phpdocumentor-element__name" id="method___construct">
         __construct()
-        <a href="classes/Twitch-Http-Exceptions-HttpException.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Twitch-Http-Exceptions-MissingScopeException.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Exceptions/HttpException.php"><a href="files/src-twitch-exceptions-httpexception.html"><abbr title="src/Twitch/Exceptions/HttpException.php">HttpException.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Exceptions/MissingScopeException.php"><a href="files/src-twitch-exceptions-missingscopeexception.html"><abbr title="src/Twitch/Exceptions/MissingScopeException.php">MissingScopeException.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">24</span>
+    <span class="phpdocumentor-element-found-in__line">32</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$message</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$status</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">0</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$error</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$response</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Throwable">Throwable</abbr>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$previous</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$message</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$status</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">401</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$error</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$response</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\Throwable">Throwable</abbr>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$previous</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -377,7 +424,7 @@ them is worth re-issuing a token over:</dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$status</span>
                 : <span class="phpdocumentor-argument-list__argument__type">int</span>
-                 = <span class="phpdocumentor-argument-list__argument__default-value">0</span>            </dt>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">401</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
@@ -465,40 +512,28 @@ them is worth re-issuing a token over:</dd>
             -private
                                     -static                    "
 >
-    <h4 class="phpdocumentor-element__name" id="method_classifyUnauthorized">
-        classifyUnauthorized()
-        <a href="classes/Twitch-Http-Exceptions-HttpException.html#method_classifyUnauthorized" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_parseScopes">
+        parseScopes()
+        <a href="classes/Twitch-Http-Exceptions-MissingScopeException.html#method_parseScopes" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Exceptions/HttpException.php"><a href="files/src-twitch-exceptions-httpexception.html"><abbr title="src/Twitch/Exceptions/HttpException.php">HttpException.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Exceptions/MissingScopeException.php"><a href="files/src-twitch-exceptions-missingscopeexception.html"><abbr title="src/Twitch/Exceptions/MissingScopeException.php">MissingScopeException.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">79</span>
+    <span class="phpdocumentor-element-found-in__line">49</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Twitch overloads 401 for three unrelated conditions, and only one of
-them is worth re-issuing a token over:</p>
+        <p class="phpdocumentor-summary">Pulls the scope names out of `Missing scope: a:b or c:d`.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">classifyUnauthorized</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$message</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">parseScopes</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$message</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;int, string&gt;</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
     
-        <section class="phpdocumentor-description"><ul>
-<li>the grant is too narrow   → <a href="classes/Twitch-Http-Exceptions-MissingScopeException.html"><abbr title="\Twitch\Http\Exceptions\MissingScopeException">MissingScopeException</abbr></a> (re-authorize)</li>
-<li>the wrong <em>kind</em> of token → plain <a href="classes/Twitch-Http-Exceptions-HttpException.html"><abbr title="\Twitch\Http\Exceptions\HttpException">HttpException</abbr></a>   (unrecoverable)</li>
-<li>anything else             → <a href="classes/Twitch-Http-Exceptions-InvalidTokenException.html"><abbr title="\Twitch\Http\Exceptions\InvalidTokenException">InvalidTokenException</abbr></a> (refresh)</li>
-</ul>
-<p>Unrecognised messages fall through to <a href="classes/Twitch-Http-Exceptions-InvalidTokenException.html"><abbr title="\Twitch\Http\Exceptions\InvalidTokenException">InvalidTokenException</abbr></a> so a
-genuine expiry still triggers a refresh even if Twitch reworks the
-wording. The two carve-outs are the cases where retrying provably
-cannot help — a scope 401 survives any number of refreshes, and an
-endpoint that demands an app access token will never accept a user one.</p>
-</section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -516,7 +551,7 @@ endpoint that demands an app access token will never accept a user one.</p>
     
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">string</span>
+        <span class="phpdocumentor-signature__response_type">array&lt;int, string&gt;</span>
             </section>
 
 </article>
@@ -534,8 +569,8 @@ endpoint that demands an app access token will never accept a user one.</p>
             <li class="phpdocumentor-on-this-page-section__title">Table Of Contents</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
-                                                            <li><a href="classes/Twitch-Http-Exceptions-HttpException.html#toc-properties">Properties</a></li>
-                                                            <li><a href="classes/Twitch-Http-Exceptions-HttpException.html#toc-methods">Methods</a></li>
+                                                            <li><a href="classes/Twitch-Http-Exceptions-MissingScopeException.html#toc-properties">Properties</a></li>
+                                                            <li><a href="classes/Twitch-Http-Exceptions-MissingScopeException.html#toc-methods">Methods</a></li>
                                     </ul>
             </li>
             
@@ -544,6 +579,7 @@ endpoint that demands an app access token will never accept a user one.</p>
                     <ul class="phpdocumentor-list -clean">
                                                     <li class=""><a href="classes/Twitch-Http-Exceptions-HttpException.html#property_error">$error</a></li>
                                                     <li class=""><a href="classes/Twitch-Http-Exceptions-HttpException.html#property_response">$response</a></li>
+                                                    <li class=""><a href="classes/Twitch-Http-Exceptions-MissingScopeException.html#property_scopes">$scopes</a></li>
                                                     <li class=""><a href="classes/Twitch-Http-Exceptions-HttpException.html#property_status">$status</a></li>
                                             </ul>
                 </li>
@@ -551,9 +587,9 @@ endpoint that demands an app access token will never accept a user one.</p>
                         <li class="phpdocumentor-on-this-page-section__title">Methods</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
-                                            <li class=""><a href="classes/Twitch-Http-Exceptions-HttpException.html#method___construct">__construct()</a></li>
+                                            <li class=""><a href="classes/Twitch-Http-Exceptions-MissingScopeException.html#method___construct">__construct()</a></li>
                                             <li class=""><a href="classes/Twitch-Http-Exceptions-HttpException.html#method_fromResponse">fromResponse()</a></li>
-                                            <li class=""><a href="classes/Twitch-Http-Exceptions-HttpException.html#method_classifyUnauthorized">classifyUnauthorized()</a></li>
+                                            <li class=""><a href="classes/Twitch-Http-Exceptions-MissingScopeException.html#method_parseScopes">parseScopes()</a></li>
                                     </ul>
             </li>
                     </ul>
@@ -573,7 +609,7 @@ endpoint that demands an app access token will never accept a user one.</p>
     </section>
 </section>
         </div>
-        <a href="classes/Twitch-Http-Exceptions-HttpException.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+        <a href="classes/Twitch-Http-Exceptions-MissingScopeException.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 
     </main>
 

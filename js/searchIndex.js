@@ -121,6 +121,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Twitch-Http-Endpoint.html#constant_CHEERMOTES"
         },                {
+            "fqsen": "\\Twitch\\Http\\Endpoint\u003A\u003ACUSTOM_POWER_UPS",
+            "name": "CUSTOM_POWER_UPS",
+            "summary": "",
+            "url": "classes/Twitch-Http-Endpoint.html#constant_CUSTOM_POWER_UPS"
+        },                {
             "fqsen": "\\Twitch\\Http\\Endpoint\u003A\u003AEXTENSION_TRANSACTIONS",
             "name": "EXTENSION_TRANSACTIONS",
             "summary": "",
@@ -226,6 +231,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Twitch-Http-Endpoint.html#constant_SEND_CHAT_MESSAGE"
         },                {
+            "fqsen": "\\Twitch\\Http\\Endpoint\u003A\u003ACHAT_PINS",
+            "name": "CHAT_PINS",
+            "summary": "",
+            "url": "classes/Twitch-Http-Endpoint.html#constant_CHAT_PINS"
+        },                {
             "fqsen": "\\Twitch\\Http\\Endpoint\u003A\u003AUSER_CHAT_COLOR",
             "name": "USER_CHAT_COLOR",
             "summary": "",
@@ -235,6 +245,16 @@ Search.appendIndex(
             "name": "CLIPS",
             "summary": "",
             "url": "classes/Twitch-Http-Endpoint.html#constant_CLIPS"
+        },                {
+            "fqsen": "\\Twitch\\Http\\Endpoint\u003A\u003ACLIP_FROM_VOD",
+            "name": "CLIP_FROM_VOD",
+            "summary": "",
+            "url": "classes/Twitch-Http-Endpoint.html#constant_CLIP_FROM_VOD"
+        },                {
+            "fqsen": "\\Twitch\\Http\\Endpoint\u003A\u003ACLIP_DOWNLOADS",
+            "name": "CLIP_DOWNLOADS",
+            "summary": "",
+            "url": "classes/Twitch-Http-Endpoint.html#constant_CLIP_DOWNLOADS"
         },                {
             "fqsen": "\\Twitch\\Http\\Endpoint\u003A\u003ACCLS",
             "name": "CCLS",
@@ -351,6 +371,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Twitch-Http-Endpoint.html#constant_HYPE_TRAIN_EVENTS"
         },                {
+            "fqsen": "\\Twitch\\Http\\Endpoint\u003A\u003AHYPE_TRAIN_STATUS",
+            "name": "HYPE_TRAIN_STATUS",
+            "summary": "",
+            "url": "classes/Twitch-Http-Endpoint.html#constant_HYPE_TRAIN_STATUS"
+        },                {
             "fqsen": "\\Twitch\\Http\\Endpoint\u003A\u003AAUTOMOD_STATUS",
             "name": "AUTOMOD_STATUS",
             "summary": "",
@@ -415,6 +440,11 @@ Search.appendIndex(
             "name": "WARNINGS",
             "summary": "",
             "url": "classes/Twitch-Http-Endpoint.html#constant_WARNINGS"
+        },                {
+            "fqsen": "\\Twitch\\Http\\Endpoint\u003A\u003ASUSPICIOUS_USERS",
+            "name": "SUSPICIOUS_USERS",
+            "summary": "",
+            "url": "classes/Twitch-Http-Endpoint.html#constant_SUSPICIOUS_USERS"
         },                {
             "fqsen": "\\Twitch\\Http\\Endpoint\u003A\u003APOLLS",
             "name": "POLLS",
@@ -591,6 +621,11 @@ Search.appendIndex(
             "summary": "Builds\u0020the\u0020right\u0020exception\u0020subclass\u0020for\u0020a\u0020failed\u0020response.",
             "url": "classes/Twitch-Http-Exceptions-HttpException.html#method_fromResponse"
         },                {
+            "fqsen": "\\Twitch\\Http\\Exceptions\\HttpException\u003A\u003AclassifyUnauthorized\u0028\u0029",
+            "name": "classifyUnauthorized",
+            "summary": "Twitch\u0020overloads\u0020401\u0020for\u0020three\u0020unrelated\u0020conditions,\u0020and\u0020only\u0020one\u0020of\nthem\u0020is\u0020worth\u0020re\u002Dissuing\u0020a\u0020token\u0020over\u003A",
+            "url": "classes/Twitch-Http-Exceptions-HttpException.html#method_classifyUnauthorized"
+        },                {
             "fqsen": "\\Twitch\\Http\\Exceptions\\HttpException\u003A\u003A\u0024status",
             "name": "status",
             "summary": "",
@@ -615,6 +650,26 @@ Search.appendIndex(
             "name": "MethodNotAllowedException",
             "summary": "The\u0020HTTP\u0020method\u0020is\u0020not\u0020allowed\u0020on\u0020this\u0020endpoint.",
             "url": "classes/Twitch-Http-Exceptions-MethodNotAllowedException.html"
+        },                {
+            "fqsen": "\\Twitch\\Http\\Exceptions\\MissingScopeException",
+            "name": "MissingScopeException",
+            "summary": "The\u0020token\u0020is\u0020valid,\u0020but\u0020was\u0020not\u0020granted\u0020a\u0020scope\u0020the\u0020endpoint\u0020requires.",
+            "url": "classes/Twitch-Http-Exceptions-MissingScopeException.html"
+        },                {
+            "fqsen": "\\Twitch\\Http\\Exceptions\\MissingScopeException\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Twitch-Http-Exceptions-MissingScopeException.html#method___construct"
+        },                {
+            "fqsen": "\\Twitch\\Http\\Exceptions\\MissingScopeException\u003A\u003AparseScopes\u0028\u0029",
+            "name": "parseScopes",
+            "summary": "Pulls\u0020the\u0020scope\u0020names\u0020out\u0020of\u0020\u0060Missing\u0020scope\u003A\u0020a\u003Ab\u0020or\u0020c\u003Ad\u0060.",
+            "url": "classes/Twitch-Http-Exceptions-MissingScopeException.html#method_parseScopes"
+        },                {
+            "fqsen": "\\Twitch\\Http\\Exceptions\\MissingScopeException\u003A\u003A\u0024scopes",
+            "name": "scopes",
+            "summary": "",
+            "url": "classes/Twitch-Http-Exceptions-MissingScopeException.html#property_scopes"
         },                {
             "fqsen": "\\Twitch\\Http\\Exceptions\\NoPermissionsException",
             "name": "NoPermissionsException",
