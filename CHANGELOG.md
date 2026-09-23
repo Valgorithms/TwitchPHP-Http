@@ -5,12 +5,22 @@ All notable changes to `twitchphp/http` are documented here. The format follows
 
 ## [Unreleased]
 
+## [1.1.0] - 2026-09-23
+
 ### Added
 
 - `MissingScopeException` — raised when the token is valid but was not granted
   a scope the endpoint requires. Deliberately *not* an `InvalidTokenException`,
   because re-issuing the token cannot widen a grant. Its `$scopes` property
   holds the scopes Twitch named, any one of which would have satisfied the call.
+- `Endpoint` constants for the Helix operations the Twitch OpenAPI spec
+  documents and the map lacked: `HYPE_TRAIN_STATUS`, `CUSTOM_POWER_UPS`,
+  `CHAT_PINS`, `CLIP_FROM_VOD`, `CLIP_DOWNLOADS` and `SUSPICIOUS_USERS`.
+
+### Deprecated
+
+- `Endpoint::HYPE_TRAIN_EVENTS` — Twitch withdrew the endpoint and it answers
+  410. Use `HYPE_TRAIN_STATUS`. Kept so existing callers still compile.
 
 ### Fixed
 
