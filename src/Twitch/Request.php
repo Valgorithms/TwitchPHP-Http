@@ -23,6 +23,9 @@ final class Request
 {
     private int $attempts = 0;
 
+    /** Whether the caller supplied its own `Authorization` header. */
+    private readonly bool $ownAuthorization;
+
     /**
      * @param array<string, string> $headers
      */
@@ -33,6 +36,17 @@ final class Request
         private readonly string $content,
         private array $headers,
     ) {
+        $this->ownAuthorization = array_key_exists('authorization', array_change_key_case($headers));
+    }
+
+    /**
+     * Whether the caller supplied its own `Authorization` header, such as an
+     * extension's signed JWT. {@see Http} then leaves it alone instead of
+     * sending the client's token.
+     */
+    public function hasOwnAuthorization(): bool
+    {
+        return $this->ownAuthorization;
     }
 
     public function getMethod(): string

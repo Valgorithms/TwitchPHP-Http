@@ -176,6 +176,7 @@ class Endpoint
     public const USER_BLOCKS             = 'users/blocks';                      // GET, PUT, DELETE
     public const USER_EXTENSIONS_LIST    = 'users/extensions/list';             // GET
     public const USER_EXTENSIONS         = 'users/extensions';                  // GET, PUT
+    public const USER_AUTHORIZATIONS     = 'authorization/users';               // GET
 
     // ── Videos ───────────────────────────────────────────────────────────
     public const VIDEOS                  = 'videos';                            // GET, DELETE

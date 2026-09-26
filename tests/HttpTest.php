@@ -63,6 +63,43 @@ final class HttpTest extends TestCase
         self::assertSame('client-123', $headers['Client-Id']);
     }
 
+    public function testCallerSuppliedAuthorizationIsSentInsteadOfTheClientToken(): void
+    {
+        $driver = new FakeDriver();
+        $driver->script[] = new Response(503, [], 'unavailable');
+        $driver->script[] = new Response(204, [], '');
+
+        await($this->http($driver)->get(Endpoint::EXTENSION_SECRETS, null, [
+            'authorization' => 'Bearer signed.jwt',
+            'Client-Id' => 'extension-client',
+        ]));
+
+        // Both attempts, the retry included, keep the caller's credentials.
+        self::assertCount(2, $driver->seen);
+        foreach ($driver->seen as $request) {
+            $headers = $request->getHeaders();
+            self::assertTrue($request->hasOwnAuthorization());
+            self::assertSame('Bearer signed.jwt', $headers['authorization']);
+            self::assertArrayNotHasKey('Authorization', $headers);
+            self::assertSame('extension-client', $headers['Client-Id']);
+        }
+    }
+
+    public function testRetriesPickUpARefreshedClientToken(): void
+    {
+        $driver = new FakeDriver();
+        $driver->script[] = new Response(503, [], 'unavailable');
+        $driver->script[] = new Response(200, [], '{"data":[]}');
+
+        $http = $this->http($driver);
+        $promise = $http->get(Endpoint::USERS);
+        $http->setToken('refreshed');
+        await($promise);
+
+        self::assertFalse($driver->seen[1]->hasOwnAuthorization());
+        self::assertSame('Bearer refreshed', $driver->seen[1]->getHeaders()['Authorization']);
+    }
+
     public function test204ResolvesNull(): void
     {
         $driver = new FakeDriver();

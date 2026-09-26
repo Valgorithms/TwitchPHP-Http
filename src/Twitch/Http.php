@@ -30,8 +30,10 @@ use Twitch\Http\Exceptions\RateLimitException;
  * Non-blocking HTTP client for the Twitch Helix API.
  *
  * Every call gets the `Authorization: Bearer` and `Client-Id` headers Twitch
- * requires, is funnelled through a bounded concurrency queue, and is retried
- * on `429` (honouring `Ratelimit-Reset`) and on transient `5xx`. Successful
+ * requires, unless the caller passes its own (the extension endpoints that
+ * take a signed JWT, for instance), is funnelled through a bounded concurrency
+ * queue, and is retried on `429` (honouring `Ratelimit-Reset`) and on
+ * transient `5xx`. Successful
  * responses resolve with the decoded JSON body — Twitch's `{data, pagination}`
  * envelope is passed through untouched; a `204` resolves with `null`.
  *
@@ -182,7 +184,9 @@ final class Http implements HttpInterface
 
     private function send(Request $request): void
     {
-        $request->setHeader('Authorization', 'Bearer ' . $this->token);
+        if (! $request->hasOwnAuthorization()) {
+            $request->setHeader('Authorization', 'Bearer ' . $this->token);
+        }
         $request->setHeader('User-Agent', 'TwitchPHP-Http/' . self::VERSION . ' (+https://github.com/valzargaming/TwitchPHP-Http)');
         $attempt = $request->bumpAttempts();
         ++$this->inFlight;
