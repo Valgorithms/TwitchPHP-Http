@@ -561,6 +561,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Twitch-Http-Endpoint.html#constant_USER_EXTENSIONS"
         },                {
+            "fqsen": "\\Twitch\\Http\\Endpoint\u003A\u003AUSER_AUTHORIZATIONS",
+            "name": "USER_AUTHORIZATIONS",
+            "summary": "",
+            "url": "classes/Twitch-Http-Endpoint.html#constant_USER_AUTHORIZATIONS"
+        },                {
             "fqsen": "\\Twitch\\Http\\Endpoint\u003A\u003AVIDEOS",
             "name": "VIDEOS",
             "summary": "",
@@ -1026,6 +1031,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Twitch-Http-Request.html#method___construct"
         },                {
+            "fqsen": "\\Twitch\\Http\\Request\u003A\u003AhasOwnAuthorization\u0028\u0029",
+            "name": "hasOwnAuthorization",
+            "summary": "Whether\u0020the\u0020caller\u0020supplied\u0020its\u0020own\u0020\u0060Authorization\u0060\u0020header,\u0020such\u0020as\u0020an\nextension\u0027s\u0020signed\u0020JWT.\u0020\u007B\u0040see\u0020Http\u007D\u0020then\u0020leaves\u0020it\u0020alone\u0020instead\u0020of\nsending\u0020the\u0020client\u0027s\u0020token.",
+            "url": "classes/Twitch-Http-Request.html#method_hasOwnAuthorization"
+        },                {
             "fqsen": "\\Twitch\\Http\\Request\u003A\u003AgetMethod\u0028\u0029",
             "name": "getMethod",
             "summary": "",
@@ -1080,6 +1090,11 @@ Search.appendIndex(
             "name": "attempts",
             "summary": "",
             "url": "classes/Twitch-Http-Request.html#property_attempts"
+        },                {
+            "fqsen": "\\Twitch\\Http\\Request\u003A\u003A\u0024ownAuthorization",
+            "name": "ownAuthorization",
+            "summary": "Whether\u0020the\u0020caller\u0020supplied\u0020its\u0020own\u0020\u0060Authorization\u0060\u0020header.",
+            "url": "classes/Twitch-Http-Request.html#property_ownAuthorization"
         },                {
             "fqsen": "\\Twitch\\Http\\Request\u003A\u003A\u0024deferred",
             "name": "deferred",

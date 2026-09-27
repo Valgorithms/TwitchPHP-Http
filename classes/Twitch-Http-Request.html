@@ -207,6 +207,13 @@
                         &nbsp;: string            </span>
 </dt>
 
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a class="" href="classes/Twitch-Http-Request.html#property_ownAuthorization">$ownAuthorization</a>
+    <span>
+                        &nbsp;: bool            </span>
+</dt>
+<dd>Whether the caller supplied its own `Authorization` header.</dd>
+
     </dl>
 
 <h4 id="toc-methods">
@@ -275,6 +282,15 @@
                                 &nbsp;: string    </span>
 </dt>
 <dd>The absolute URL, base + rendered endpoint + query string.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Twitch-Http-Request.html#method_hasOwnAuthorization">hasOwnAuthorization()</a>
+    <span>
+                                &nbsp;: bool    </span>
+</dt>
+<dd>Whether the caller supplied its own `Authorization` header, such as an
+extension&#039;s signed JWT. {@see Http} then leaves it alone instead of
+sending the client&#039;s token.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/Twitch-Http-Request.html#method_setHeader">setHeader()</a>
@@ -349,7 +365,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Request.php"><a href="files/src-twitch-request.html"><abbr title="src/Twitch/Request.php">Request.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">33</span>
+    <span class="phpdocumentor-element-found-in__line">36</span>
 
     </aside>
 
@@ -386,7 +402,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Request.php"><a href="files/src-twitch-request.html"><abbr title="src/Twitch/Request.php">Request.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">30</span>
+    <span class="phpdocumentor-element-found-in__line">33</span>
 
     </aside>
 
@@ -423,7 +439,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Request.php"><a href="files/src-twitch-request.html"><abbr title="src/Twitch/Request.php">Request.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">32</span>
+    <span class="phpdocumentor-element-found-in__line">35</span>
 
     </aside>
 
@@ -460,7 +476,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Request.php"><a href="files/src-twitch-request.html"><abbr title="src/Twitch/Request.php">Request.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">34</span>
+    <span class="phpdocumentor-element-found-in__line">37</span>
 
     </aside>
 
@@ -497,7 +513,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Request.php"><a href="files/src-twitch-request.html"><abbr title="src/Twitch/Request.php">Request.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">31</span>
+    <span class="phpdocumentor-element-found-in__line">34</span>
 
     </aside>
 
@@ -507,6 +523,44 @@
         <span class="phpdocumentor-signature__visibility">private</span>
             <span class="phpdocumentor-signature__type">string</span>
     <span class="phpdocumentor-signature__name">$method</span>
+    </code>
+
+    
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                -read-only                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_ownAuthorization">
+        $ownAuthorization
+        <a href="classes/Twitch-Http-Request.html#property_ownAuthorization" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                        <small class="phpdocumentor-element__modifier">read-only</small>                    </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Request.php"><a href="files/src-twitch-request.html"><abbr title="src/Twitch/Request.php">Request.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">27</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Whether the caller supplied its own `Authorization` header.</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">private</span>
+            <span class="phpdocumentor-signature__type">bool</span>
+    <span class="phpdocumentor-signature__name">$ownAuthorization</span>
     </code>
 
     
@@ -539,7 +593,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Request.php"><a href="files/src-twitch-request.html"><abbr title="src/Twitch/Request.php">Request.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">29</span>
+    <span class="phpdocumentor-element-found-in__line">32</span>
 
     </aside>
 
@@ -611,7 +665,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Request.php"><a href="files/src-twitch-request.html"><abbr title="src/Twitch/Request.php">Request.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">85</span>
+    <span class="phpdocumentor-element-found-in__line">99</span>
 
     </aside>
 
@@ -649,7 +703,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Request.php"><a href="files/src-twitch-request.html"><abbr title="src/Twitch/Request.php">Request.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">75</span>
+    <span class="phpdocumentor-element-found-in__line">89</span>
 
     </aside>
 
@@ -687,7 +741,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Request.php"><a href="files/src-twitch-request.html"><abbr title="src/Twitch/Request.php">Request.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">80</span>
+    <span class="phpdocumentor-element-found-in__line">94</span>
 
     </aside>
 
@@ -725,7 +779,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Request.php"><a href="files/src-twitch-request.html"><abbr title="src/Twitch/Request.php">Request.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">54</span>
+    <span class="phpdocumentor-element-found-in__line">68</span>
 
     </aside>
 
@@ -763,7 +817,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Request.php"><a href="files/src-twitch-request.html"><abbr title="src/Twitch/Request.php">Request.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">70</span>
+    <span class="phpdocumentor-element-found-in__line">84</span>
 
     </aside>
 
@@ -801,7 +855,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Request.php"><a href="files/src-twitch-request.html"><abbr title="src/Twitch/Request.php">Request.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">43</span>
+    <span class="phpdocumentor-element-found-in__line">57</span>
 
     </aside>
 
@@ -839,7 +893,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Request.php"><a href="files/src-twitch-request.html"><abbr title="src/Twitch/Request.php">Request.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">60</span>
+    <span class="phpdocumentor-element-found-in__line">74</span>
 
     </aside>
 
@@ -877,7 +931,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Request.php"><a href="files/src-twitch-request.html"><abbr title="src/Twitch/Request.php">Request.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">38</span>
+    <span class="phpdocumentor-element-found-in__line">52</span>
 
     </aside>
 
@@ -915,7 +969,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Request.php"><a href="files/src-twitch-request.html"><abbr title="src/Twitch/Request.php">Request.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">49</span>
+    <span class="phpdocumentor-element-found-in__line">63</span>
 
     </aside>
 
@@ -946,6 +1000,47 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_hasOwnAuthorization">
+        hasOwnAuthorization()
+        <a href="classes/Twitch-Http-Request.html#method_hasOwnAuthorization" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Request.php"><a href="files/src-twitch-request.html"><abbr title="src/Twitch/Request.php">Request.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">47</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Whether the caller supplied its own `Authorization` header, such as an
+extension&#039;s signed JWT. {@see Http} then leaves it alone instead of
+sending the client&#039;s token.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">hasOwnAuthorization</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_setHeader">
         setHeader()
         <a href="classes/Twitch-Http-Request.html#method_setHeader" class="headerlink"><i class="fas fa-link"></i></a>
@@ -954,7 +1049,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Twitch/Request.php"><a href="files/src-twitch-request.html"><abbr title="src/Twitch/Request.php">Request.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">65</span>
+    <span class="phpdocumentor-element-found-in__line">79</span>
 
     </aside>
 
@@ -1019,6 +1114,7 @@
                                                     <li class=""><a href="classes/Twitch-Http-Request.html#property_endpoint">$endpoint</a></li>
                                                     <li class=""><a href="classes/Twitch-Http-Request.html#property_headers">$headers</a></li>
                                                     <li class=""><a href="classes/Twitch-Http-Request.html#property_method">$method</a></li>
+                                                    <li class=""><a href="classes/Twitch-Http-Request.html#property_ownAuthorization">$ownAuthorization</a></li>
                                             </ul>
                 </li>
             
@@ -1035,6 +1131,7 @@
                                             <li class=""><a href="classes/Twitch-Http-Request.html#method_getHeaders">getHeaders()</a></li>
                                             <li class=""><a href="classes/Twitch-Http-Request.html#method_getMethod">getMethod()</a></li>
                                             <li class=""><a href="classes/Twitch-Http-Request.html#method_getUrl">getUrl()</a></li>
+                                            <li class=""><a href="classes/Twitch-Http-Request.html#method_hasOwnAuthorization">hasOwnAuthorization()</a></li>
                                             <li class=""><a href="classes/Twitch-Http-Request.html#method_setHeader">setHeader()</a></li>
                                     </ul>
             </li>
