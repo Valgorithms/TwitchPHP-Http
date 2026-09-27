@@ -43,7 +43,7 @@ use Twitch\Http\Exceptions\RateLimitException;
  */
 final class Http implements HttpInterface
 {
-    public const VERSION = '1.0.0';
+    public const VERSION = '1.2.0';
 
     /** Helix API base. OAuth lives on a different host — see {@see OAuth}. */
     public const BASE_URL = 'https://api.twitch.tv/helix';

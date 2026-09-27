@@ -5,6 +5,8 @@ All notable changes to `twitchphp/http` are documented here. The format follows
 
 ## [Unreleased]
 
+## [1.2.0] - 2026-09-26
+
 ### Added
 
 - `Endpoint::USER_AUTHORIZATIONS` (`authorization/users`), for Get Authorization
@@ -17,6 +19,7 @@ All notable changes to `twitchphp/http` are documented here. The format follows
   client overwrote it with its own token on every attempt, so the extension
   endpoints that take a signed JWT could not be called at all. Detection is
   case-insensitive, and a retry keeps the caller's header too.
+- `Http::VERSION`, and so the `User-Agent` header, still said 1.0.0.
 
 ## [1.1.0] - 2026-09-23
 
